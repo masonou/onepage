@@ -16,18 +16,12 @@ export const elContent: SiteContent = {
     cta: { label: "Get a quote", href: `#${sectionIds.contact}` },
   },
   hero: {
-    title: "Simple websites for small businesses in Cyprus",
-    description:
-      "Modern, mobile-friendly websites starting from €500. Clear process, no unnecessary complexity, and no agency-level pricing.",
-    primaryCta: { label: "Get a free quote", href: `#${sectionIds.contact}` },
-    secondaryCta: { label: "View packages", href: `#${sectionIds.packages}` },
+    title: "Θέλεις Ιστοσελίδα αλλά ούλλοι κόφκουν κελλέ; Δαμέ είσαι!",
+    description: "Μοντέρνες Ιστοσελίδες | Ξεκάθαρη Διαδικασία | Φιλική Τιμή",
+    primaryCta: { label: "Επικοινώνησε", href: `#${sectionIds.contact}` },
+    secondaryCta: { label: "Πόσα", href: `#${sectionIds.packages}` },
     trustNote:
-      "Built for local businesses, solo professionals, and service providers who need a professional online presence without overpaying.",
-    highlights: [
-      "Starting from €500 for a clear, practical marketing website.",
-      "Prepared for Greek and English from the start.",
-      "Built to look professional on mobile, tablet, and desktop.",
-    ],
+      "Για μικρές επιχειρήσεις και ελεύθερους επαγγελματίες που χρειάζονται εμφάνιση στο διαδίκτυο χωρίς να πιερώσουν τα μανοτζέφαλα τους.",
   },
   whoItsFor: {
     title: "Who this is for",
@@ -45,9 +39,10 @@ export const elContent: SiteContent = {
     ],
   },
   problem: {
-    title: "Most small businesses do not need a €5,000 website",
+    title:
+      "Γιατί σου ζητούν €5,000 για μιαν απλή ιστοσελίδα τζαι γιατί την κάμνω πιο φτηνά;",
     paragraphs: [
-      "Many website quotes are high because the process is unclear. Agencies often need to spend time on research, strategy, revisions, and custom features before the actual website is even built.",
+      "Γιατί εν ακριβά: 2 κύριοι λόγοι. 1. Εν ξέρεις τι θέλεις, που σημαίνει ότι θα πρέπει ο προγραμματιστής να φάει τις ώρες του όσπου να κουτσίσει κάτι που σου αρέσκει. 2. Τζαι ούτε πρέπει, η δουλειά σου εν είναι να ξέρεις πως να παρουσαστείς διαδικτυακά! ",
       "For many small businesses, that is too much.",
     ],
     needsTitle: "What you usually need is simple",
@@ -98,7 +93,8 @@ export const elContent: SiteContent = {
       {
         name: "Premium",
         price: "From €1,000",
-        bestFor: "Best for: Businesses that need a more complete online presence",
+        bestFor:
+          "Best for: Businesses that need a more complete online presence",
         description:
           "A more polished website for businesses that need to present multiple services, products, or categories. Inspired by websites like lvgblinds.com.",
         includes: [
@@ -302,7 +298,8 @@ export const elContent: SiteContent = {
         name: "needs",
         label: "What do you need?",
         type: "textarea",
-        placeholder: "Tell us about your business, your services, and what you want the website to help with.",
+        placeholder:
+          "Tell us about your business, your services, and what you want the website to help with.",
       },
     ],
     ctaLabel: "Get a free quote",

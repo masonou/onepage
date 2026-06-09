@@ -7,22 +7,21 @@ import { Hero } from "./sections/Hero";
 import { Packages } from "./sections/Packages";
 import { Problem } from "./sections/Problem";
 import { Process } from "./sections/Process";
-import { WhoItsFor } from "./sections/WhoItsFor";
+// import { WhoItsFor } from "./sections/WhoItsFor";
 import { WhyUs } from "./sections/WhyUs";
-import type { Locale, SiteContent } from "../types/content";
+import type { SiteContent } from "../types/content";
 
 type MarketingPageProps = {
   content: SiteContent;
-  locale: Locale;
 };
 
-export function MarketingPage({ content, locale }: MarketingPageProps) {
+export function MarketingPage({ content }: MarketingPageProps) {
   return (
     <div className="flex min-h-screen flex-col bg-background text-foreground">
-      <Header content={content.header} locale={locale} />
+      <Header content={content.header} />
       <main className="flex-1">
         <Hero content={content.hero} />
-        <WhoItsFor content={content.whoItsFor} />
+        {/* <WhoItsFor content={content.whoItsFor} /> */}
         <Problem content={content.problem} />
         <Packages content={content.packages} />
         <Process content={content.process} />

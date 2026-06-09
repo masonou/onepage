@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 import { MarketingPage } from "../components/MarketingPage";
-import { elContent } from "../lib/content/el";
+import { siteContent } from "../lib/content";
 import { buildPageMetadata } from "../lib/site";
 
 // TODO: Replace this placeholder metadata with Greek copy once `src/lib/content/el.ts` is translated.
@@ -10,9 +10,8 @@ export const metadata: Metadata = buildPageMetadata({
   description:
     "Affordable, modern, mobile-friendly websites for small businesses, solo professionals, and local service providers in Cyprus. Starting from €500.",
   pathname: "/",
-  locale: "el",
 });
 
 export default function HomePage() {
-  return <MarketingPage content={elContent} locale="el" />;
+  return <MarketingPage content={siteContent} />;
 }

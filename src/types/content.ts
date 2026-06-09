@@ -1,5 +1,3 @@
-export type Locale = "el" | "en";
-
 export type LinkItem = {
   label: string;
   href: string;
@@ -114,12 +112,10 @@ export type ContactContent = {
 export type FooterContent = {
   brand: string;
   tagline: string;
-  localeLinks: LinkItem[];
   email: string;
 };
 
 export type SiteContent = {
-  locale: Locale;
   header: HeaderContent;
   hero: HeroContent;
   whoItsFor: WhoItsForContent;

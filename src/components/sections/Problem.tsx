@@ -16,13 +16,16 @@ export function Problem({ content }: ProblemProps) {
           ))}
         </div>
 
-        <Card className="rounded-[2rem] p-8" tone="soft">
+        <Card className="rounded-4xl p-8" tone="soft">
           <h3 className="text-lg font-semibold text-foreground">
             {content.needsTitle}
           </h3>
           <ul className="mt-6 space-y-4">
             {content.needs.map((need) => (
-              <li key={need} className="flex items-start gap-3 text-sm leading-7 text-foreground">
+              <li
+                key={need}
+                className="flex items-start gap-3 text-sm leading-7 text-foreground"
+              >
                 <span className="mt-2 h-2.5 w-2.5 shrink-0 rounded-full bg-accent" />
                 <span>{need}</span>
               </li>

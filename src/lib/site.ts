@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
 
-import type { Locale } from "../types/content";
-
 export const siteConfig = {
   name: "One Page Cyprus",
   email: "hello@example.com",
@@ -23,32 +21,25 @@ type BuildPageMetadataOptions = {
   title: string;
   description: string;
   pathname: string;
-  locale: Locale;
 };
 
 export function buildPageMetadata({
   title,
   description,
   pathname,
-  locale,
 }: BuildPageMetadataOptions): Metadata {
   return {
     title,
     description,
     alternates: {
       canonical: pathname,
-      languages: {
-        "el-CY": "/",
-        en: "/en",
-        "x-default": "/",
-      },
     },
     openGraph: {
       title,
       description,
       url: pathname,
       siteName: siteConfig.name,
-      locale: locale === "en" ? "en_GB" : "el_CY",
+      locale: "el_CY",
       type: "website",
     },
   };

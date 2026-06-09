@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 import { Container } from "../ui/Container";
 import type { FooterContent } from "../../types/content";
 
@@ -22,14 +20,10 @@ export function Footer({ content }: FooterProps) {
           </div>
 
           <div className="space-y-3 text-sm text-muted md:text-right">
-            <div className="flex gap-4 md:justify-end">
-              {content.localeLinks.map((link) => (
-                <Link key={link.href} href={link.href} className="hover:text-foreground">
-                  {link.label}
-                </Link>
-              ))}
-            </div>
-            <a href={`mailto:${content.email}`} className="hover:text-foreground">
+            <a
+              href={`mailto:${content.email}`}
+              className="inline-flex hover:text-foreground"
+            >
               {content.email}
             </a>
           </div>

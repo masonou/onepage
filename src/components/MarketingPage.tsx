@@ -26,8 +26,8 @@ export function MarketingPage({ content }: MarketingPageProps) {
         <Packages content={content.packages} />
         <Process content={content.process} />
         <Examples content={content.examples} />
-        <WhyUs content={content.whyUs} />
-        <FAQ content={content.faq} />
+        {/* <WhyUs content={content.whyUs} /> */}
+        {/* <FAQ content={content.faq} /> */}
         <Contact content={content.contact} />
       </main>
       <Footer content={content.footer} />

@@ -9,12 +9,7 @@ type ProcessProps = {
 
 export function Process({ content }: ProcessProps) {
   return (
-    <Section
-      id={sectionIds.process}
-      title={content.title}
-      description={content.description}
-      tone="tint"
-    >
+    <Section id={sectionIds.process} title={content.title} tone="tint">
       <ol className="grid gap-5 lg:grid-cols-2 xl:grid-cols-4">
         {content.steps.map((step, index) => (
           <li key={step.title}>
@@ -23,13 +18,19 @@ export function Process({ content }: ProcessProps) {
                 {index + 1}
               </span>
               <div className="space-y-3">
-                <h3 className="text-lg font-semibold text-foreground">{step.title}</h3>
-                <p className="text-sm leading-7 text-muted">{step.description}</p>
+                <h3 className="text-lg font-semibold text-foreground">
+                  {step.title}
+                </h3>
+                <p className="text-sm leading-7 text-muted">
+                  {step.description}
+                </p>
               </div>
             </Card>
           </li>
         ))}
       </ol>
+      <br></br>
+      {content.description}
     </Section>
   );
 }

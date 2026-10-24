@@ -12,7 +12,12 @@ export function Problem({ content }: ProblemProps) {
       <div className="grid gap-6 lg:grid-cols-[minmax(0,1.15fr)_minmax(280px,0.85fr)] lg:items-start">
         <div className="space-y-5 text-base leading-8 text-muted">
           {content.paragraphs.map((paragraph) => (
-            <p key={paragraph}>{paragraph}</p>
+            <p
+              key={paragraph.text}
+              className={paragraph.tone === "strong" ? "font-semibold text-foreground" : ""}
+            >
+              {paragraph.text}
+            </p>
           ))}
         </div>
 

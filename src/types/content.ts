@@ -1,3 +1,5 @@
+export type Locale = "el" | "en";
+
 export type LinkItem = {
   label: string;
   href: string;
@@ -15,7 +17,6 @@ export type HeroContent = {
   primaryCta: LinkItem;
   secondaryCta: LinkItem;
   trustNote: string;
-  highlights: string[];
 };
 
 export type WhoItsForContent = {
@@ -24,9 +25,14 @@ export type WhoItsForContent = {
   items: string[];
 };
 
+export type ProblemParagraph = {
+  text: string;
+  tone?: "normal" | "strong";
+};
+
 export type ProblemContent = {
   title: string;
-  paragraphs: string[];
+  paragraphs: ProblemParagraph[];
   needsTitle: string;
   needs: string[];
 };
@@ -112,10 +118,12 @@ export type ContactContent = {
 export type FooterContent = {
   brand: string;
   tagline: string;
+  localeLinks: LinkItem[];
   email: string;
 };
 
 export type SiteContent = {
+  locale: Locale;
   header: HeaderContent;
   hero: HeroContent;
   whoItsFor: WhoItsForContent;

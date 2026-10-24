@@ -39,22 +39,26 @@ export const elContent: SiteContent = {
     ],
   },
   problem: {
-    title:
-      "Γιατί σου ζητούν €5,000 για μιαν απλή ιστοσελίδα τζαι γιατί την κάμνω πιο φτηνά;",
+    title: "Γιατί σου ζητούν €5,000 για μιαν απλή ιστοσελίδα;",
     paragraphs: [
-      "Ο κύριος λόγος που ακόυεις έτσι τιμές είναι επειδή εν ξέρεις τι θέλεις. Τζαι ούτε πρέπει όμως!",
-      "Ένεν η δουλεία σου να ξέρεις πως πρέπει να σχεδιαστεί μια ιστοσελίδα τζαι τη να γραφτεί μέσα. Αλλά επειδή εν ξέρεις, οι προγραμματιστές τζαι σχεδιαστές ενα πρέπει να φαν τις ώρες τους να κάμνουν και να ξανα-κάμνουν τι σελίδα σου όσπου να κουτσίσουν κάτι που σου αρέσκει.",
-      "Ο δεύτερος λόγος εν επειδή ρωτάς σε λάθος τόπους!",
-      "Ρωτάς σε μεγάλες εταιρείες που κάμνουν εφαρμογές για τράπεζες, φόρεξ τζαι αλυσίδες. Εφαρμογές που κοστίζουν δεκάδες σσιλίαες. Μόνο τζαι μόνο για να σχοληθούν ενα πρέπει να σσιονόσσεις λεφτά. Αλλά ΔΕΝ τους χρείαζεσαι.",
-      "Ή ρωτάς σε άτομα που κάμνουν ιστοσελίδες, αλλά δεν καταλάβουν την επιχείρησή σου τζαι τις ανάγκες τις. Επομένως στην χρέωση υπολογίζουν τις ώρες έρευνας που ενα φάσην (έξω που τις ώρες που να φαν να αλλάξουν μικρο-πράματα που εν σου αρέσκουν).",
-      "Ο τρίτος τζαι τελευταίος λόγος, επειδή ρωτας για πράματα που εν πολύπλοκα. Πράματα που το πιο ακούουντε τζαι φαίνουνται ωραία, αλλά στην πραγματικότητα εν τα χρειάζεσαι.",
+      { text: "1. Εν ξέρεις τι θέλεις", tone: "strong" },
+      {
+        text: "Ένεν η δουλεία σου να ξέρεις πως πρέπει να σχεδιαστεί μια ιστοσελίδα τζαι τη να γραφτεί μέσα. Αλλά επειδή εν ξέρεις, οι προγραμματιστές τζαι σχεδιαστές ενα πρέπει να φαν τις ώρες τους να κάμνουν και να ξανα-κάμνουν τι σελίδα σου όσπου να κουτσίσουν κάτι που σου αρέσκει.",
+      },
+      { text: "2. Ρωτάς σε λάθος τόπους", tone: "strong" },
+      {
+        text: "Ρωτάς σε μεγάλες εταιρείες που κάμνουν εφαρμογές για τράπεζες, φόρεξ τζαι αλυσίδες. Εφαρμογές που κοστίζουν δεκάδες σσιλίαες. Μόνο τζαι μόνο για να σχοληθούν ενα πρέπει να σσιονόσσεις λεφτά.",
+      },
+      { text: "3. Ζητάς πράματα που εν πολύπλοκα", tone: "strong" },
+      {
+        text: "Πράματα που ακούουντε τζαι φαίνουνται ωραία, αλλά στην πραγματικότητα εν τα χρειάζεσαι.",
+      },
     ],
     needsTitle: "Το τι χρειάζεσαι πραγματικά είναι απλό",
     needs: [
       "Επαγγελματική πρώτη εντύπωση που μιλά στους πιθανούς σου πελάτες",
       "Ξεκάθαρες πληροφορίες για το τι προσφέρεις",
       "Ενά τρόπο να επικοινωνήσουν μαζί σου εύκολα",
-      "Ιστοσελίδα που λειτουργεί καλά σε κινητά",
       "Κάτι εμφανίσημο που μπόρεις να διαφημίσεις στο βανούι σου, αλλά τζαι στο ίνσταγκραμ",
     ],
   },
@@ -64,18 +68,19 @@ export const elContent: SiteContent = {
       "Για να δουλέψουμε μαζί, σημαίνει εν θα δικαιούσε να μου πείς μα τζαι μου",
     packages: [
       {
-        name: "Starter",
-        price: "From €500",
+        name: "Βασικό Πακέτο με ότι Χρειάζεσαι",
+        price: "€1,000",
         bestFor: "Best for: Solo professionals and simple personal brands",
         description:
           "A clean one-page website for professionals who need a simple online presence. Inspired by simple personal and professional websites like thepsyeducator.co.uk.",
         includes: [
-          "One-page website",
-          "Mobile-friendly design",
-          "Greek and English structure prepared",
-          "Contact section",
-          "Basic SEO setup",
-          "Help with domain and launch",
+          "Συμβουλή για το τι να κάμουμε",
+          "Μαξ 2 σελίδες",
+          "Μοντέρνο design",
+          "Καλή για τηλέφωνα κομπιούτερ",
+          "Μια γλώσσα (Αγγλικά ή Ελληνικά)",
+          "Ξεκάθαρες πληροφορίες και τρόπους επικοινωνιάς για τη δουλεία σου",
+          "Αγορά του ονόματος (βασικά κόστη)",
         ],
       },
       {
@@ -129,29 +134,29 @@ export const elContent: SiteContent = {
     note: "Prices depend on the amount of content, pages, revisions, and any extra setup needed. The goal is always to keep things simple, clear, and affordable.",
   },
   process: {
-    title: "How it works",
+    title: "Η Διαδικασία",
     description:
-      "A simple process keeps the project moving and avoids the confusion that usually makes websites expensive.",
+      "Ούλλη διαδικασία πέρνει περίπου 1-2 εβδομάδες. Καθόλη τη διάρκεια θα είμαστε σε επικοινωνία.",
     steps: [
       {
-        title: "We understand your business",
+        title: "Καταλάβω τις ανάγκες σου",
         description:
-          "Short call or message exchange to understand what you do, who your customers are, and what the website needs to say.",
+          "Ένα δεκάλεπτο τηλεφώνημα για να καταλάβω τι κάμνεις, τι χρειάζεσαι, ποιοί εν οι πελάτες σου, τζαι αν κάμνει να δουλέψουμε μαζί.",
       },
       {
-        title: "You send the basics",
+        title: "Στέλνεις μου τα βασικά",
         description:
-          "Logo, photos, services, contact details, and any text you already have. If you do not have everything ready, we can guide you.",
+          "Λογότυπο, Φωτογραφίες, διαδικασίες, και γενικά ότι έσσεις. Ένεν ανάγκη να τα σκεφτείς τωρά τούτα όμως.",
       },
       {
-        title: "We build the website",
+        title: "Χτίζω τη σελίδα",
         description:
-          "We create the structure, design the page, add the content, and prepare the site for mobile and search engines.",
+          "Δημιουργώ την ιστοσελίδα βάση των αναγκών σου και κάμνουμε αλλαγές που θέλεις (1 φορά).",
       },
       {
-        title: "Review and launch",
+        title: "Πληρωμή και Πάμεν Online",
         description:
-          "You review the website, we make final adjustments, connect the domain, and launch it.",
+          "Βρίσκουμε το όνομα που θέλεις (π.χ. onepage.com.cy), πληρώνεις με, και πάμεν online.",
       },
     ],
   },

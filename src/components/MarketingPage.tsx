@@ -2,7 +2,7 @@ import { Footer } from "./layout/Footer";
 import { Header } from "./layout/Header";
 import { Contact } from "./sections/Contact";
 import { Examples } from "./sections/Examples";
-import { FAQ } from "./sections/FAQ";
+// import { FAQ } from "./sections/FAQ";
 import { Hero } from "./sections/Hero";
 import { Packages } from "./sections/Packages";
 import { Problem } from "./sections/Problem";
@@ -23,10 +23,10 @@ export function MarketingPage({ content }: MarketingPageProps) {
         <Hero content={content.hero} />
         {/* <WhoItsFor content={content.whoItsFor} /> */}
         <Problem content={content.problem} />
-        <Packages content={content.packages} />
         <Process content={content.process} />
+        <Packages content={content.packages} />
         <Examples content={content.examples} />
-        {/* <WhyUs content={content.whyUs} /> */}
+        <WhyUs content={content.whyUs} />
         {/* <FAQ content={content.faq} /> */}
         <Contact content={content.contact} />
       </main>

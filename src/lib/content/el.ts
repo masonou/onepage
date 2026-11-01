@@ -64,70 +64,37 @@ export const elContent: SiteContent = {
   },
   packages: {
     title: "Ναι αλλά.. Πόσα;",
-    description:
-      "Για να δουλέψουμε μαζί, σημαίνει εν θα δικαιούσε να μου πείς μα τζαι μου",
+    description: "",
     packages: [
       {
         name: "Βασικό Πακέτο με ότι Χρειάζεσαι",
-        price: "€1,000",
-        bestFor: "Best for: Solo professionals and simple personal brands",
-        description:
-          "A clean one-page website for professionals who need a simple online presence. Inspired by simple personal and professional websites like thepsyeducator.co.uk.",
+        price: "€850",
+        bestFor:
+          "Ιδανικό για μικρομεσαίες επιχειρήσεις και ελέυθερους επαγγελματίες",
+        description: "",
         includes: [
           "Συμβουλή για το τι να κάμουμε",
           "Μαξ 2 σελίδες",
           "Μοντέρνο design",
-          "Καλή για τηλέφωνα κομπιούτερ",
-          "Μια γλώσσα (Αγγλικά ή Ελληνικά)",
+          "Καλή για τηλέφωνα και κομπιούτερ",
+          "Μια γλώσσα (Αγγλικά)",
           "Ξεκάθαρες πληροφορίες και τρόπους επικοινωνιάς για τη δουλεία σου",
           "Αγορά του ονόματος (βασικά κόστη)",
         ],
       },
       {
-        name: "Business",
-        price: "From €800",
-        bestFor: "Best for: Small businesses that need more structure",
-        description:
-          "A stronger one-page website with clearer sections, better service presentation, and more trust-building content.",
+        name: "Έξτρα",
+        price: "",
+        bestFor: "",
+        description: "",
         includes: [
-          "Everything in Starter",
+          "",
           "More detailed service sections",
           "FAQ section",
           "Google Maps and contact details",
           "Stronger homepage structure",
           "Better conversion-focused layout",
           "Optional booking link or WhatsApp CTA",
-        ],
-      },
-      {
-        name: "Premium",
-        price: "From €1,000",
-        bestFor:
-          "Best for: Businesses that need a more complete online presence",
-        description:
-          "A more polished website for businesses that need to present multiple services, products, or categories. Inspired by websites like lvgblinds.com.",
-        includes: [
-          "Everything in Business",
-          "More advanced page structure",
-          "Multiple service and category sections",
-          "Stronger visual design",
-          "More detailed SEO setup",
-          "More time for content refinement",
-          "Launch support",
-        ],
-      },
-      {
-        name: "Custom",
-        price: "Custom quote",
-        bestFor: "Best for: Businesses that need something more specific",
-        description:
-          "For projects that need extra pages, more content, special sections, or a more tailored structure.",
-        includes: [
-          "Custom page structure",
-          "Extra pages if needed",
-          "More advanced content support",
-          "Custom integrations where appropriate",
-          "Ongoing support options if needed",
         ],
       },
     ],
@@ -161,27 +128,15 @@ export const elContent: SiteContent = {
     ],
   },
   examples: {
-    title: "Example website styles",
-    description:
-      "Here are a few simple directions this can take, depending on the type of business and how much structure you need.",
+    title: "Παράδειγμα Ιστοσελίδας",
+    description: "",
     items: [
       {
-        title: "Solo professional website",
-        description:
-          "A simple one-page website for a tutor, consultant, therapist, or educator.",
-      },
-      {
-        title: "Local business website",
-        description:
-          "A clean website for a cafe, salon, shop, gym, or service provider.",
-      },
-      {
-        title: "Service company website",
-        description:
-          "A more complete website for businesses with multiple services or product categories.",
+        title: "LVG Blinds",
+        description: "Ιστοσελίδα για τοπιική επιχείρηση",
       },
     ],
-    note: "Real project examples will be added soon.",
+    note: "",
   },
   whyUs: {
     title: "Why choose us",
@@ -268,59 +223,65 @@ export const elContent: SiteContent = {
     ],
   },
   contact: {
-    title: "Tell us what you need",
+    title: "Πε μου τι θέλεις",
     description:
-      "Send a few details about your business and we will tell you what package makes the most sense.",
+      "Αν πρωτιμάς να επικοινωνήσεις κατευθείας στείλμου μύνημα στο WhatsApp, +35799194313.",
     formFields: [
-      { name: "name", label: "Name", type: "text", placeholder: "Your name" },
       {
-        name: "businessName",
-        label: "Business name",
+        name: "name",
+        label: "Όνομα",
         type: "text",
-        placeholder: "Your business name",
+        placeholder: "",
+        required: true,
       },
       {
         name: "email",
         label: "Email",
         type: "email",
-        placeholder: "you@example.com",
+        placeholder: "",
+        required: true,
       },
       {
         name: "phone",
-        label: "Phone",
+        label: "Τηλέφωνο",
         type: "tel",
-        placeholder: "+357",
+        placeholder: "",
+        required: true,
       },
       {
-        name: "businessType",
-        label: "What type of business do you have?",
+        name: "preferredCommunication",
+        label: "Πως προτιμάς να επικοινωνήσω;",
+        type: "select",
+        options: [
+          { label: "WhatsApp", value: "whatsapp", preferred: true },
+          { label: "Viber", value: "viber" },
+          { label: "Email", value: "email" },
+        ],
+      },
+      {
+        name: "businessName",
+        label: "Όνομα επιχείρησης",
         type: "text",
-        placeholder: "Tutor, cafe, salon, tradesman...",
+        placeholder: "",
       },
       {
         name: "existingWebsite",
-        label: "Do you already have a website?",
+        label: "Έχεις ήδη ιστοσελίδα;",
         type: "select",
-        options: ["No", "Yes"],
+        options: [
+          { label: "Όχι", value: "no" },
+          { label: "Ναι", value: "yes" },
+        ],
       },
       {
         name: "needs",
-        label: "What do you need?",
+        label: "Τι χρειάζεσαι;",
         type: "textarea",
         placeholder:
-          "Tell us about your business, your services, and what you want the website to help with.",
+          "Μια σύντομη περιγραφή του τι κάνει η επιχείρησή σου. Αν ήδη έχεις ιστοσελίδα ή μέσα κοινωνικής δικτύωσης για την επιχείρησή σου (Instagram ή Facebook).",
       },
     ],
-    ctaLabel: "Get a free quote",
-    formNote:
-      "This form is ready for the final design now. Submission can be connected later when the contact workflow is confirmed.",
-    detailsTitle: "What helps us quote quickly",
-    details: [
-      "A short summary of what your business does.",
-      "Any existing website, Instagram page, or Google Business listing.",
-      "What you want the website to explain or help customers do.",
-      `Prefer email instead? You can reach us at ${siteConfig.email}.`,
-    ],
+    ctaLabel: "Αποστολή",
   },
   footer: {
     brand: siteConfig.name,

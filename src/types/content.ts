@@ -102,17 +102,24 @@ export type FormField = {
   label: string;
   type: "text" | "email" | "tel" | "textarea" | "select";
   placeholder?: string;
-  options?: string[];
+  options?: FormSelectOption[];
+  required?: boolean;
+};
+
+export type FormSelectOption = {
+  label: string;
+  value: string;
+  preferred?: boolean;
 };
 
 export type ContactContent = {
   title: string;
   description: string;
   formFields: FormField[];
-  ctaLabel: string;
-  formNote: string;
-  detailsTitle: string;
-  details: string[];
+  ctaLabel?: string;
+  formNote?: string;
+  detailsTitle?: string;
+  details?: string[];
 };
 
 export type FooterContent = {

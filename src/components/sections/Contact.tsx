@@ -1,7 +1,11 @@
+"use client";
+
+import type { FormEvent } from "react";
+
 import { Button } from "../ui/Button";
 import { Card } from "../ui/Card";
 import { Section } from "../ui/Section";
-import { sectionIds } from "../../lib/site";
+import { sectionIds, siteConfig } from "../../lib/site";
 import type { ContactContent, FormField } from "../../types/content";
 
 type ContactProps = {
@@ -19,6 +23,7 @@ function renderField(field: FormField) {
         name={field.name}
         rows={5}
         placeholder={field.placeholder}
+        required={field.required}
         className={fieldClasses}
       />
     );
@@ -31,8 +36,12 @@ function renderField(field: FormField) {
           Select an option
         </option>
         {field.options?.map((option) => (
-          <option key={option} value={option}>
-            {option}
+          <option
+            key={option.value}
+            value={option.value}
+            className={option.preferred ? "font-semibold" : undefined}
+          >
+            {option.label}
           </option>
         ))}
       </select>
@@ -45,26 +54,58 @@ function renderField(field: FormField) {
       name={field.name}
       type={field.type}
       placeholder={field.placeholder}
+      required={field.required}
       className={fieldClasses}
     />
   );
 }
 
 export function Contact({ content }: ContactProps) {
+  const hasDetails = Boolean(content.detailsTitle || content.details?.length);
+  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+
+    const formData = new FormData(event.currentTarget);
+    const message = content.formFields
+      .map((field) => {
+        const value = formData.get(field.name);
+        return value ? `${field.label}: ${value}` : null;
+      })
+      .filter(Boolean)
+      .join("\n");
+
+    window.location.href = `mailto:${siteConfig.email}?${new URLSearchParams({
+      subject: `${siteConfig.name} contact request`,
+      body: message,
+    }).toString()}`;
+  };
+
   return (
     <Section
       id={sectionIds.contact}
       title={content.title}
       description={content.description}
     >
-      <div className="grid gap-6 lg:grid-cols-[minmax(0,1.1fr)_minmax(280px,0.9fr)]">
+      <div
+        className={
+          hasDetails
+            ? "grid gap-6 lg:grid-cols-[minmax(0,1.1fr)_minmax(280px,0.9fr)]"
+            : "grid gap-6"
+        }
+      >
         <Card className="p-8 sm:p-10" tone="soft">
-          <form className="space-y-5">
-            {/* TODO: Add form submission handling here when the contact flow is connected. */}
+          <form className="space-y-5" onSubmit={handleSubmit}>
             <div className="grid gap-5 sm:grid-cols-2">
               {content.formFields.slice(0, 6).map((field) => (
                 <label key={field.name} htmlFor={field.name}>
-                  <span className="text-sm font-semibold text-foreground">{field.label}</span>
+                  <span className="text-sm font-semibold text-foreground">
+                    {field.label}
+                    {field.required && (
+                      <span className="ml-1 text-accent" aria-hidden="true">
+                        *
+                      </span>
+                    )}
+                  </span>
                   {renderField(field)}
                 </label>
               ))}
@@ -72,34 +113,52 @@ export function Contact({ content }: ContactProps) {
 
             {content.formFields.slice(6).map((field) => (
               <label key={field.name} htmlFor={field.name}>
-                <span className="text-sm font-semibold text-foreground">{field.label}</span>
+                <span className="text-sm font-semibold text-foreground">
+                  {field.label}
+                  {field.required && (
+                    <span className="ml-1 text-accent" aria-hidden="true">
+                      *
+                    </span>
+                  )}
+                </span>
                 {renderField(field)}
               </label>
             ))}
 
-            <div className="space-y-4 pt-2">
-              <Button type="button">{content.ctaLabel}</Button>
-              <p className="text-sm leading-7 text-muted">{content.formNote}</p>
+            <div className="pt-2">
+              <Button type="submit">{content.ctaLabel ?? "Αποστολή"}</Button>
             </div>
+
+            {content.formNote && (
+              <div className="space-y-4 pt-2">
+                <p className="text-sm leading-7 text-muted">{content.formNote}</p>
+              </div>
+            )}
           </form>
         </Card>
 
-        <Card className="p-8 sm:p-10" tone="plain">
-          <p className="text-sm font-semibold uppercase tracking-[0.16em] text-accent">
-            {content.detailsTitle}
-          </p>
-          <ul className="mt-6 space-y-4">
-            {content.details.map((detail) => (
-              <li
-                key={detail}
-                className="flex items-start gap-3 text-sm leading-7 text-foreground"
-              >
-                <span className="mt-2 h-2.5 w-2.5 shrink-0 rounded-full bg-accent" />
-                <span>{detail}</span>
-              </li>
-            ))}
-          </ul>
-        </Card>
+        {hasDetails && (
+          <Card className="p-8 sm:p-10" tone="plain">
+            {content.detailsTitle && (
+              <p className="text-sm font-semibold uppercase tracking-[0.16em] text-accent">
+                {content.detailsTitle}
+              </p>
+            )}
+            {!!content.details?.length && (
+              <ul className={content.detailsTitle ? "mt-6 space-y-4" : "space-y-4"}>
+                {content.details.map((detail) => (
+                  <li
+                    key={detail}
+                    className="flex items-start gap-3 text-sm leading-7 text-foreground"
+                  >
+                    <span className="mt-2 h-2.5 w-2.5 shrink-0 rounded-full bg-accent" />
+                    <span>{detail}</span>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </Card>
+        )}
       </div>
     </Section>
   );

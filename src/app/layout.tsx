@@ -19,7 +19,9 @@ export default function RootLayout({
   return (
     // TODO: Revisit the root `lang` attribute when the default route is translated into Greek.
     <html lang="en" className="h-full antialiased">
-      <body className="min-h-full bg-background text-foreground">{children}</body>
+      <body className="min-h-full bg-background text-foreground">
+        {children}
+      </body>
     </html>
   );
 }

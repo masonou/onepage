@@ -94,6 +94,7 @@ export const elContent: SiteContent = {
           "Φόρμα επικοινωνίας",
           "Επιπλέων αναθεωρήσεις/αλλαγές",
           "Γκαλερί φωτογραφιών",
+          "Αναλυτικά στοιχεία / αναφορές για να ξέρεις ποιοί επισκέπτονται τη σελίδα σου",
           "Επιπλέων γλώσσες (πιθανότητα για Ελληνικά, Ρώσικα, Ισπανικά)",
           "Συγκεκριμένες λειτουργίες (π.χ. κρατήσεις, online παραγγελίες, κλπ.)",
           "Συνεχής υποστήριξη για μικρές αλλαγές/προσθήκες περιεχομένου",
@@ -130,15 +131,20 @@ export const elContent: SiteContent = {
     ],
   },
   examples: {
-    title: "Παράδειγμα Ιστοσελίδας",
-    description: "",
-    items: [
-      {
-        title: "LVG Blinds",
-        description: "Ιστοσελίδα για τοπιική επιχείρηση",
-      },
-    ],
-    note: "",
+    title: "See what your website could look like",
+    project: {
+      name: "LVG Blinds",
+      description:
+        "A website that presents the company’s indoor and outdoor shading solutions and gives visitors a clear way to enquire.",
+      highlights: [
+        "Clear service presentation",
+        "Responsive design",
+        "Easy access to contact and consultation enquiries",
+      ],
+      website: "https://www.lvgblinds.com",
+      desktopImage: "/images/lvg-blinds-desktop.jpg",
+      mobileImage: "/images/lvg-blinds-mobile.jpg",
+    },
   },
   whyUs: {
     title: "Why choose us",

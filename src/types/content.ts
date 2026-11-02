@@ -63,16 +63,19 @@ export type ProcessContent = {
   steps: ProcessStep[];
 };
 
-export type ExampleItem = {
-  title: string;
+export type FeaturedProject = {
+  name: string;
   description: string;
+  highlights: string[];
+  website: string;
+  desktopImage: string;
+  mobileImage: string;
 };
 
 export type ExamplesContent = {
   title: string;
-  description: string;
-  items: ExampleItem[];
-  note: string;
+  description?: string;
+  project: FeaturedProject;
 };
 
 export type WhyUsItem = {

@@ -19,7 +19,7 @@ export function Examples({ content }: ExamplesProps) {
       <Card className="overflow-hidden p-5 sm:p-6 lg:p-8" tone="soft">
         <div className="grid items-center gap-10 lg:grid-cols-[minmax(0,1.2fr)_minmax(18rem,0.8fr)] lg:gap-12">
           <div className="relative">
-            <div className="overflow-hidden rounded-[1.5rem] border border-border bg-white shadow-[0_18px_50px_rgba(15,23,42,0.08)]">
+            <div className="overflow-hidden rounded-3xl border border-border bg-white shadow-[0_18px_50px_rgba(15,23,42,0.08)]">
               <Image
                 src={content.project.desktopImage}
                 alt="LVG Blinds website displayed on a desktop screen"
@@ -49,7 +49,9 @@ export function Examples({ content }: ExamplesProps) {
               <h3 className="text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
                 {content.project.name}
               </h3>
-              <p className="text-base leading-8 text-muted">{content.project.description}</p>
+              <p className="text-base leading-8 text-muted">
+                {content.project.description}
+              </p>
             </div>
 
             <ul className="space-y-3">

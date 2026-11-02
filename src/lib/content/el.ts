@@ -151,41 +151,29 @@ export const elContent: SiteContent = {
     },
   },
   whyUs: {
-    title: "Why choose us",
-    description:
-      "This service is designed for businesses that want a strong online presence without being pushed into a bigger project than they need.",
-    items: [
-      {
-        title: "Built for small businesses",
-        description:
-          "We focus on businesses that need clarity, not unnecessary complexity.",
-      },
-      {
-        title: "Clear pricing",
-        description:
-          "Starting prices are visible from the beginning, so there are no surprises.",
-      },
-      {
-        title: "Greek and English ready",
-        description:
-          "The website structure is prepared for both languages from the start.",
-      },
-      {
-        title: "Simple process",
-        description:
-          "We guide you through what is needed and keep the project moving.",
-      },
-      {
-        title: "Mobile-friendly",
-        description:
-          "Your website will be built to look good on phones, tablets, and desktops.",
-      },
-      {
-        title: "SEO foundations",
-        description:
-          "We set up the basics properly so your website has a better chance of being found.",
-      },
-    ],
+    title: "Γιατί να δουλέψεις μαζί μου",
+    description: `Χαίρετε, είμαι ο Κυριάκος (τζίνος που να σου κάμει την ιστοσελίδα)!
+
+                  Ο λόγος για να δουλέψεις μαζί μου εν απλός, θέλεις ιστοσελίδα, τζαι οι επιλογές σου είναι: 
+
+                  1. Να πάεις σε μεγάλυ εταιρεία, όπου το πιο πιθανόν θα σου κάμουν πολλά καλή δουλεία αλλά θα σου την κόψουν.
+
+                  2. Να πάεις σε μια φτηνή αλλά random εταιρεία που ήβρες online, όπου το πιο πιθανόν θα έχουν μηνιαία περιττά κόστη ή ενά χαθούν μετά που να σου παραδώσουν τη σελίδα.
+
+                  3. Να πάεις σε ένα μιτσή (καλύτερη επιλογή που τις πρώτες 2), που χρησιμοιά μια συγκεκριμένη εφαρμογή ή μόνο ΑΙ για να σου κάμει τη σελίδα. Φτηνη και παρουσιάσιμη δουλεία, αλλά με μακροχρόνια ρίσκα.
+
+                  4. Να έβρεις κάποιν ελεύθερο επαγγελματία σαν εμένα (με διαφορά η καλύτερη επιλογή για μικρομεσαιές επιχειρήσεις). 
+
+                  Εν θα κάτσω να σε πείσω γιατί το νούμερο 4 εν η καλύτερη επιλογή για εσένα, αν δεν το βλέπεις, σημάινει εν κάμνει να δουλέψουμε μαζί έτσι και αλιώς.
+
+                  Ο λόγος να πάεις μαζί μου, σε σχέση με άλλους ελεύθερους επαγγελματίες, δεν είναι επειδή είμαι ο καλύτερος προγραμματιστής ή σχεδιαστής (που δεν είμαι), αλλά επειδή μπόρω να καταλάβω την επιχείρηση και τους πελάτες σου πολλά καλύτερα που άλλους. Για τους δικούς σου σκοπούς, για εμένα τούτον εν το πιο σημαντικό που ούλλα.
+
+                  Άτε κανεί να το σκέφτεσαι τζαι να το μελετάς👇
+                  
+                  `,
+
+    image: "/images/masonou.jpeg",
+    imageAlt: "Ο Mason Ou",
   },
   faq: {
     title: "FAQ",

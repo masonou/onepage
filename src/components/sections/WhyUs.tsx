@@ -1,4 +1,5 @@
-import { Card } from "../ui/Card";
+import Image from "next/image";
+
 import { Section } from "../ui/Section";
 import { sectionIds } from "../../lib/site";
 import type { WhyUsContent } from "../../types/content";
@@ -9,19 +10,28 @@ type WhyUsProps = {
 
 export function WhyUs({ content }: WhyUsProps) {
   return (
-    <Section
-      id={sectionIds.whyUs}
-      title={content.title}
-      description={content.description}
-      tone="tint"
-    >
-      <div className="grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
-        {content.items.map((item) => (
-          <Card key={item.title} className="h-full p-7" tone="plain">
-            <h3 className="text-lg font-semibold text-foreground">{item.title}</h3>
-            <p className="mt-3 text-sm leading-7 text-muted">{item.description}</p>
-          </Card>
-        ))}
+    <Section id={sectionIds.whyUs} title={content.title} tone="tint">
+      <div className="grid items-center gap-8 lg:grid-cols-[minmax(17rem,0.7fr)_minmax(0,1.3fr)] lg:gap-16">
+        <div className="mx-auto w-full max-w-sm lg:mx-0 lg:max-w-none">
+          <div className="overflow-hidden rounded-[1.75rem] border border-border bg-white shadow-[0_18px_50px_rgba(15,23,42,0.08)]">
+            <Image
+              src={content.image}
+              alt={content.imageAlt}
+              width={1920}
+              height={2560}
+              sizes="(min-width: 1024px) 30vw, (min-width: 640px) 24rem, 100vw"
+              className="mt-[-20%] h-auto w-full"
+            />
+          </div>
+        </div>
+
+        <div className="max-w-xl border-l-2 border-accent pl-6 sm:pl-8">
+          {content.description && (
+            <p className="whitespace-pre-line text-base leading-8 text-muted sm:text-md">
+              {content.description}
+            </p>
+          )}
+        </div>
       </div>
     </Section>
   );

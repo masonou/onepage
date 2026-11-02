@@ -82,15 +82,11 @@ export type ExamplesContent = {
   project: FeaturedProject;
 };
 
-export type WhyUsItem = {
-  title: string;
-  description: string;
-};
-
 export type WhyUsContent = {
   title: string;
   description: string;
-  items: WhyUsItem[];
+  image: string;
+  imageAlt: string;
 };
 
 export type FAQItem = {

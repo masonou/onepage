@@ -131,15 +131,15 @@ export const elContent: SiteContent = {
     ],
   },
   examples: {
-    title: "See what your website could look like",
+    title: "Πως μπορεί να είναι η ιστοσελίδα σου",
     project: {
       name: "LVG Blinds",
       description:
-        "A website that presents the company’s indoor and outdoor shading solutions and gives visitors a clear way to enquire.",
+        "Ιστοσελίδα για εταιρεία που παρέχει λύσεις για εσωτερική και εξωτερική σκίαση.",
       highlights: [
-        "Clear service presentation",
-        "Responsive design",
-        "Easy access to contact and consultation enquiries",
+        "Ξεκάθαρη παρουσίαση των υπηρεσιών",
+        "Εμφάνιση των προϊόντων με φωτογραφίες",
+        "Εύκολοι τρόποι επικοινωνίας",
       ],
       website: "https://www.lvgblinds.com",
       desktopImage: "/images/lvg-blinds-desktop.jpg",

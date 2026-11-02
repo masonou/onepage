@@ -64,12 +64,16 @@ export type ProcessContent = {
 };
 
 export type FeaturedProject = {
+  featuredLabel: string;
   name: string;
   description: string;
   highlights: string[];
+  ctaLabel: string;
   website: string;
   desktopImage: string;
+  desktopImageAlt: string;
   mobileImage: string;
+  mobileImageAlt: string;
 };
 
 export type ExamplesContent = {

@@ -22,7 +22,7 @@ export function Examples({ content }: ExamplesProps) {
             <div className="overflow-hidden rounded-3xl border border-border bg-white shadow-[0_18px_50px_rgba(15,23,42,0.08)]">
               <Image
                 src={content.project.desktopImage}
-                alt="LVG Blinds website displayed on a desktop screen"
+                alt={content.project.desktopImageAlt}
                 width={1440}
                 height={1080}
                 sizes="(min-width: 1024px) 58vw, 100vw"
@@ -32,7 +32,7 @@ export function Examples({ content }: ExamplesProps) {
             <div className="absolute bottom-3 right-3 w-24 overflow-hidden rounded-2xl border-4 border-white bg-white shadow-[0_18px_40px_rgba(15,23,42,0.2)] sm:bottom-5 sm:right-5 sm:w-32 lg:w-40">
               <Image
                 src={content.project.mobileImage}
-                alt="LVG Blinds website displayed on a mobile screen"
+                alt={content.project.mobileImageAlt}
                 width={390}
                 height={844}
                 sizes="(min-width: 1024px) 10rem, 8rem"
@@ -43,7 +43,7 @@ export function Examples({ content }: ExamplesProps) {
 
           <div className="space-y-6 lg:py-5">
             <p className="text-sm font-semibold uppercase tracking-[0.16em] text-accent">
-              Featured project
+              {content.project.featuredLabel}
             </p>
             <div className="space-y-3">
               <h3 className="text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
@@ -72,7 +72,7 @@ export function Examples({ content }: ExamplesProps) {
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center rounded-full bg-accent px-5 py-3 text-sm font-semibold tracking-tight text-white shadow-[0_18px_40px_rgba(21,90,201,0.18)] hover:bg-accent-strong focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[rgba(21,90,201,0.14)]"
             >
-              Visit website
+              {content.project.ctaLabel}
             </a>
           </div>
         </div>

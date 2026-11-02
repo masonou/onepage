@@ -8,7 +8,7 @@ import { Packages } from "./sections/Packages";
 import { Problem } from "./sections/Problem";
 import { Process } from "./sections/Process";
 // import { WhoItsFor } from "./sections/WhoItsFor";
-//import { WhyUs } from "./sections/WhyUs";
+import { WhyUs } from "./sections/WhyUs";
 import type { SiteContent } from "../types/content";
 
 type MarketingPageProps = {
@@ -26,7 +26,7 @@ export function MarketingPage({ content }: MarketingPageProps) {
         <Process content={content.process} />
         <Packages content={content.packages} />
         <Examples content={content.examples} />
-        {/* <WhyUs content={content.whyUs} /> */}
+        <WhyUs content={content.whyUs} />
         {/* <FAQ content={content.faq} /> */}
         <Contact content={content.contact} />
       </main>

@@ -133,6 +133,7 @@ export const elContent: SiteContent = {
   examples: {
     title: "Πως μπορεί να είναι η ιστοσελίδα σου",
     project: {
+      featuredLabel: "ΠΑΡΑΔΕΙΓΜΑ",
       name: "LVG Blinds",
       description:
         "Ιστοσελίδα για εταιρεία που παρέχει λύσεις για εσωτερική και εξωτερική σκίαση.",
@@ -141,9 +142,12 @@ export const elContent: SiteContent = {
         "Εμφάνιση των προϊόντων με φωτογραφίες",
         "Εύκολοι τρόποι επικοινωνίας",
       ],
+      ctaLabel: "Δε την",
       website: "https://www.lvgblinds.com",
       desktopImage: "/images/lvg-blinds-desktop.jpg",
+      desktopImageAlt: "Η ιστοσελίδα της LVG Blinds σε υπολογιστή",
       mobileImage: "/images/lvg-blinds-mobile.jpg",
+      mobileImageAlt: "Η ιστοσελίδα της LVG Blinds σε κινητό",
     },
   },
   whyUs: {

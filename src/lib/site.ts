@@ -10,6 +10,7 @@ export const siteConfig = {
 export const sectionIds = {
   whoItsFor: "who-its-for",
   packages: "packages",
+  problem: "problem",
   process: "how-it-works",
   examples: "examples",
   whyUs: "why-us",

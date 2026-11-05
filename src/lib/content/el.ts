@@ -7,13 +7,11 @@ export const elContent: SiteContent = {
   header: {
     brand: siteConfig.name,
     navigation: [
-      { label: "Το Γιατι", href: `#${sectionIds.problem}` },
-      { label: "Η Τιμή", href: `#${sectionIds.packages}` },
-      { label: "Η Διαδικασία", href: `#${sectionIds.process}` },
-      { label: "Το Παράδειγμα", href: `#${sectionIds.examples}` },
-      // { label: "Το Ατομο", href: `#${sectionIds.faq}` },
+      { label: "Τιμή", href: `#${sectionIds.packages}` },
+      { label: "Διαδικασία", href: `#${sectionIds.process}` },
+      { label: "Παράδειγμα", href: `#${sectionIds.examples}` },
     ],
-    cta: { label: "Get a quote", href: `#${sectionIds.contact}` },
+    cta: { label: "Επικοινώνησε", href: `#${sectionIds.contact}` },
   },
   hero: {
     title: "Θέλεις Ιστοσελίδα αλλά ούλλοι κόφκουν κελλέ; Δαμέ είσαι!",

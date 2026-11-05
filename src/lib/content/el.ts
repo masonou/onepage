@@ -173,7 +173,7 @@ export const elContent: SiteContent = {
                   `,
 
     image: "/images/masonou.jpeg",
-    imageAlt: "Ο Mason Ou",
+    imageAlt: "Kyriakos Masonou",
   },
   faq: {
     title: "FAQ",

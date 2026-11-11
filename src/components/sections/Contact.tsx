@@ -62,6 +62,9 @@ function renderField(field: FormField) {
 
 export function Contact({ content }: ContactProps) {
   const hasDetails = Boolean(content.detailsTitle || content.details?.length);
+  const whatsappHref = `https://wa.me/35799194313?text=${encodeURIComponent(
+    content.whatsappMessage,
+  )}`;
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
@@ -84,15 +87,18 @@ export function Contact({ content }: ContactProps) {
     <Section
       id={sectionIds.contact}
       title={content.title}
-      description={content.description}
     >
-      <div
-        className={
-          hasDetails
-            ? "grid gap-6 lg:grid-cols-[minmax(0,1.1fr)_minmax(280px,0.9fr)]"
-            : "grid gap-6"
-        }
-      >
+      <div className="max-w-3xl">
+        <Button href={whatsappHref} className="w-full px-6 py-4 text-base sm:w-auto">
+          {content.whatsappCtaLabel}
+        </Button>
+
+        <div className="my-8 flex items-center gap-4" aria-hidden="true">
+          <span className="h-px flex-1 bg-border" />
+          <span className="text-sm text-muted">ή</span>
+          <span className="h-px flex-1 bg-border" />
+        </div>
+
         <Card className="p-8 sm:p-10" tone="soft">
           <form className="space-y-5" onSubmit={handleSubmit}>
             <div className="grid gap-5 sm:grid-cols-2">
@@ -138,7 +144,7 @@ export function Contact({ content }: ContactProps) {
         </Card>
 
         {hasDetails && (
-          <Card className="p-8 sm:p-10" tone="plain">
+          <Card className="mt-6 p-8 sm:p-10" tone="plain">
             {content.detailsTitle && (
               <p className="text-sm font-semibold uppercase tracking-[0.16em] text-accent">
                 {content.detailsTitle}

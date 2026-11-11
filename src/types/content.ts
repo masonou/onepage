@@ -118,6 +118,8 @@ export type FormSelectOption = {
 export type ContactContent = {
   title: string;
   description: string;
+  whatsappCtaLabel: string;
+  whatsappMessage: string;
   formFields: FormField[];
   ctaLabel?: string;
   formNote?: string;

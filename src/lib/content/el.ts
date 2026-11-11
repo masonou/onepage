@@ -224,6 +224,9 @@ export const elContent: SiteContent = {
     title: "Πε μου τι θέλεις",
     description:
       "Αν προτιμάς να επικοινωνήσεις κατευθείαν στείλε μου μήνυμα στο WhatsApp, +35799194313.",
+    whatsappCtaLabel: "Στείλε μου στο WhatsApp",
+    whatsappMessage:
+      "Γεια σου Κυριάκο! Ενδιαφέρομαι να κάνω ιστοσελίδα για την επιχείρησή μου.",
     formFields: [
       {
         name: "name",

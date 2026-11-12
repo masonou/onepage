@@ -7,8 +7,8 @@ export const elContent: SiteContent = {
   header: {
     brand: siteConfig.name,
     navigation: [
-      { label: "Τιμή", href: `#${sectionIds.packages}` },
       { label: "Διαδικασία", href: `#${sectionIds.process}` },
+      { label: "Τιμή", href: `#${sectionIds.packages}` },
       { label: "Παράδειγμα", href: `#${sectionIds.examples}` },
     ],
     cta: { label: "Επικοινώνησε", href: `#${sectionIds.contact}` },

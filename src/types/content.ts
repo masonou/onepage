@@ -19,12 +19,6 @@ export type HeroContent = {
   trustNote: string;
 };
 
-export type WhoItsForContent = {
-  title: string;
-  description: string;
-  items: string[];
-};
-
 export type ProblemParagraph = {
   text: string;
   tone?: "normal" | "strong";
@@ -89,17 +83,6 @@ export type WhyUsContent = {
   imageAlt: string;
 };
 
-export type FAQItem = {
-  question: string;
-  answer: string;
-};
-
-export type FAQContent = {
-  title: string;
-  description: string;
-  items: FAQItem[];
-};
-
 export type FormField = {
   name: string;
   label: string;
@@ -117,14 +100,10 @@ export type FormSelectOption = {
 
 export type ContactContent = {
   title: string;
-  description: string;
   whatsappCtaLabel: string;
   whatsappMessage: string;
   formFields: FormField[];
   ctaLabel?: string;
-  formNote?: string;
-  detailsTitle?: string;
-  details?: string[];
 };
 
 export type FooterContent = {
@@ -138,13 +117,11 @@ export type SiteContent = {
   locale: Locale;
   header: HeaderContent;
   hero: HeroContent;
-  whoItsFor: WhoItsForContent;
   problem: ProblemContent;
   packages: PackagesContent;
   process: ProcessContent;
   examples: ExamplesContent;
   whyUs: WhyUsContent;
-  faq: FAQContent;
   contact: ContactContent;
   footer: FooterContent;
 };

@@ -5,7 +5,6 @@
   --foreground: #172033;
   --muted: #5d6679;
   --surface: #f6f2ea;
-  --surface-strong: #eef4ff;
   --accent: #155ac9;
   --accent-strong: #0f469d;
   --border: #d8dee8;
@@ -16,7 +15,6 @@
   --color-foreground: var(--foreground);
   --color-muted: var(--muted);
   --color-surface: var(--surface);
-  --color-surface-strong: var(--surface-strong);
   --color-accent: var(--accent);
   --color-accent-strong: var(--accent-strong);
   --color-border: var(--border);
@@ -70,12 +68,4 @@ input,
 select,
 textarea {
   font: inherit;
-}
-
-summary {
-  list-style: none;
-}
-
-summary::-webkit-details-marker {
-  display: none;
 }

@@ -21,21 +21,6 @@ export const elContent: SiteContent = {
     trustNote:
       "Για μικρές επιχειρήσεις και ελεύθερους επαγγελματίες που χρειάζονται εμφάνιση στο διαδίκτυο χωρίς να πιερώσουν τα μανοτζέφαλα τους.",
   },
-  whoItsFor: {
-    title: "Who this is for",
-    description:
-      "This service is for businesses that need a clean, professional website that explains what they do and makes it easy for customers to contact them.",
-    items: [
-      "Solo professionals",
-      "Tutors and educators",
-      "Cafes and restaurants",
-      "Beauty salons and barbers",
-      "Tradesmen and local services",
-      "Small shops and local businesses",
-      "Consultants and service providers",
-      "New businesses that need a simple launch",
-    ],
-  },
   problem: {
     title: "Γιατί σου ζητούν €5,000 για μιαν απλή ιστοσελίδα;",
     paragraphs: [
@@ -159,57 +144,8 @@ export const elContent: SiteContent = {
     image: "/images/masonou.jpeg",
     imageAlt: "Kyriakos Masonou",
   },
-  faq: {
-    title: "FAQ",
-    description:
-      "Straight answers to the questions most small businesses ask before getting started.",
-    items: [
-      {
-        question: "How much does a website cost?",
-        answer:
-          "Packages start from €500. The final price depends on the size of the website, content, number of sections, and any extra setup needed.",
-      },
-      {
-        question: "How long does it take?",
-        answer:
-          "A simple website can usually be completed quickly once the content is ready. Bigger or more detailed websites may take longer.",
-      },
-      {
-        question: "Do I need to have the text ready?",
-        answer:
-          "No. If you already have text, we can use it. If not, we can help structure the content and guide you on what is needed.",
-      },
-      {
-        question: "Will the website be in Greek and English?",
-        answer:
-          "Yes. The website can be prepared for both Greek and English. Greek is especially important for local Cypriot businesses.",
-      },
-      {
-        question: "Can customers contact me through the website?",
-        answer:
-          "Yes. The website can include a contact form, phone number, email, WhatsApp button, booking link, or Google Maps location.",
-      },
-      {
-        question: "Is hosting included?",
-        answer:
-          "We can guide you through domain and hosting setup. The exact setup depends on what you already have and what the website needs.",
-      },
-      {
-        question: "Can I update the website later?",
-        answer:
-          "Yes. Small updates can be handled later, and we can discuss simple support options if you need ongoing changes.",
-      },
-      {
-        question: "Is this suitable for every business?",
-        answer:
-          "This is best for businesses that need a marketing website. It is not meant for complex platforms, apps, dashboards, or custom software.",
-      },
-    ],
-  },
   contact: {
     title: "Πε μου τι θέλεις",
-    description:
-      "Αν προτιμάς να επικοινωνήσεις κατευθείαν στείλε μου μήνυμα στο WhatsApp, +35799194313.",
     whatsappCtaLabel: "Στείλε μου στο WhatsApp",
     whatsappMessage:
       "Γεια σου Κυριάκο! Ενδιαφέρομαι να κάνω ιστοσελίδα για την επιχείρησή μου.",

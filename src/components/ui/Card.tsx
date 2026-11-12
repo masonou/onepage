@@ -3,7 +3,7 @@ import type { ReactNode } from "react";
 type CardProps = {
   children: ReactNode;
   className?: string;
-  tone?: "plain" | "soft" | "accent";
+  tone?: "plain" | "soft";
 };
 
 export function Card({
@@ -11,8 +11,7 @@ export function Card({
   className = "",
   tone = "plain",
 }: CardProps) {
-  const toneClass =
-    tone === "accent" ? "bg-surface-strong" : tone === "soft" ? "bg-surface" : "bg-white";
+  const toneClass = tone === "soft" ? "bg-surface" : "bg-white";
 
   return (
     <div

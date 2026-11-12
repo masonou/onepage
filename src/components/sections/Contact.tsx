@@ -5,7 +5,7 @@ import type { FormEvent } from "react";
 import { Button } from "../ui/Button";
 import { Card } from "../ui/Card";
 import { Section } from "../ui/Section";
-import { WhatsAppIcon } from "../ui/WhatsAppIcon";
+import { WhatsAppButton } from "../ui/WhatsAppButton";
 import { sectionIds, siteConfig } from "../../lib/site";
 import type { ContactContent, FormField } from "../../types/content";
 
@@ -62,10 +62,6 @@ function renderField(field: FormField) {
 }
 
 export function Contact({ content }: ContactProps) {
-  const hasDetails = Boolean(content.detailsTitle || content.details?.length);
-  const whatsappHref = `https://wa.me/35799194313?text=${encodeURIComponent(
-    content.whatsappMessage,
-  )}`;
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
@@ -90,10 +86,10 @@ export function Contact({ content }: ContactProps) {
       title={content.title}
     >
       <div className="max-w-3xl">
-        <Button href={whatsappHref} className="w-full px-6 py-4 text-base sm:w-auto">
-          <WhatsAppIcon className="mr-2 size-5 shrink-0" />
-          <span>{content.whatsappCtaLabel}</span>
-        </Button>
+        <WhatsAppButton
+          label={content.whatsappCtaLabel}
+          message={content.whatsappMessage}
+        />
 
         <div className="my-8 flex items-center gap-4" aria-hidden="true">
           <span className="h-px flex-1 bg-border" />
@@ -137,36 +133,8 @@ export function Contact({ content }: ContactProps) {
               <Button type="submit">{content.ctaLabel ?? "Αποστολή"}</Button>
             </div>
 
-            {content.formNote && (
-              <div className="space-y-4 pt-2">
-                <p className="text-sm leading-7 text-muted">{content.formNote}</p>
-              </div>
-            )}
           </form>
         </Card>
-
-        {hasDetails && (
-          <Card className="mt-6 p-8 sm:p-10" tone="plain">
-            {content.detailsTitle && (
-              <p className="text-sm font-semibold uppercase tracking-[0.16em] text-accent">
-                {content.detailsTitle}
-              </p>
-            )}
-            {!!content.details?.length && (
-              <ul className={content.detailsTitle ? "mt-6 space-y-4" : "space-y-4"}>
-                {content.details.map((detail) => (
-                  <li
-                    key={detail}
-                    className="flex items-start gap-3 text-sm leading-7 text-foreground"
-                  >
-                    <span className="mt-2 h-2.5 w-2.5 shrink-0 rounded-full bg-accent" />
-                    <span>{detail}</span>
-                  </li>
-                ))}
-              </ul>
-            )}
-          </Card>
-        )}
       </div>
     </Section>
   );

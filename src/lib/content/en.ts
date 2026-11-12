@@ -32,33 +32,6 @@ export const enContent: SiteContent = {
     trustNote:
       "For small businesses and self-employed professionals who need a strong online presence.",
   },
-  problem: {
-    title: "Why are you quoted €5,000 for a simple website?",
-    paragraphs: [
-      { text: "1. You may not yet know exactly what you need", tone: "strong" },
-      {
-        text: "It is not your job to know how a website should be designed or what it should say. But when the brief is unclear, developers and designers have to spend extra time trying ideas and revising them until something feels right.",
-      },
-      { text: "2. You are asking the wrong places", tone: "strong" },
-      {
-        text: "Large agencies build websites and apps for major businesses. Those projects cost tens of thousands and need big teams, so even getting their attention can be expensive.",
-      },
-      {
-        text: "3. You are asking for things that are more complex than you need",
-        tone: "strong",
-      },
-      {
-        text: "They can sound and look impressive, but in practice they may not be necessary for your business.",
-      },
-    ],
-    needsTitle: "What you actually need",
-    needs: [
-      "A professional first impression that speaks to potential customers",
-      "Clear information about what you offer",
-      "An easy way for people to contact you",
-      "Something polished that you can share on your van, Instagram and everywhere else",
-    ],
-  },
   packages: {
     title: "Yes, but... how much?",
     description: "",

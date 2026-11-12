@@ -135,7 +135,7 @@ export type SiteContent = {
   metadata: PageMetadataContent;
   header: HeaderContent;
   hero: HeroContent;
-  problem: ProblemContent;
+  problem?: ProblemContent;
   packages: PackagesContent;
   process: ProcessContent;
   examples: ExamplesContent;

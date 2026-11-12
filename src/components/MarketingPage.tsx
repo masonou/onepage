@@ -19,7 +19,7 @@ export function MarketingPage({ content }: MarketingPageProps) {
       <Header content={content.header} />
       <main className="flex-1">
         <Hero content={content.hero} />
-        <Problem content={content.problem} />
+        {content.problem && <Problem content={content.problem} />}
         <Process content={content.process} />
         <Packages content={content.packages} />
         <Examples content={content.examples} />

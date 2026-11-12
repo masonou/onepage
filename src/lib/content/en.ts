@@ -66,9 +66,9 @@ export const enContent: SiteContent = {
           "Additional revisions and changes",
           "A photo gallery",
           "Analytics and reporting so you can see who visits your site",
-          "Additional languages (potentially Greek, Russian or Spanish)",
+          "Additional languages (Greek, Russian or Spanish)",
           "Specific features, such as bookings or online orders",
-          "Ongoing support for small content changes and additions",
+          "Ongoing support for content changes/additions",
         ],
       },
     ],
@@ -77,15 +77,15 @@ export const enContent: SiteContent = {
   process: {
     title: "The process",
     description:
-      "The whole process usually takes around 1–2 weeks. We will stay in touch throughout.",
+      "The whole process usually takes around 1–2 weeks and we will stay in touch throughout.",
     steps: [
       {
-        title: "I get to know what you need",
+        title: "I understand your business",
         description:
           "We talk about what you do, what you need, who your customers are and whether it makes sense for us to work together.",
       },
       {
-        title: "You send the essentials",
+        title: "You send me the essentials",
         description:
           "Your logo, photos, processes and anything else you already have.",
       },

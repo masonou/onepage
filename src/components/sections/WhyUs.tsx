@@ -2,6 +2,7 @@ import Image from "next/image";
 
 import { Button } from "../ui/Button";
 import { Section } from "../ui/Section";
+import { WhatsAppIcon } from "../ui/WhatsAppIcon";
 import { sectionIds } from "../../lib/site";
 import type { WhyUsContent } from "../../types/content";
 
@@ -38,7 +39,8 @@ export function WhyUs({ content, whatsappCtaLabel, whatsappMessage }: WhyUsProps
           )}
           <div className="mt-6">
             <Button href={whatsappHref} className="w-full px-6 py-4 text-base sm:w-auto">
-              {whatsappCtaLabel}
+              <WhatsAppIcon className="mr-2 size-5 shrink-0" />
+              <span>{whatsappCtaLabel}</span>
             </Button>
           </div>
           <div className="mt-5 flex items-center gap-2">

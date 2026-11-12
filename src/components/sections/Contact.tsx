@@ -5,6 +5,7 @@ import type { FormEvent } from "react";
 import { Button } from "../ui/Button";
 import { Card } from "../ui/Card";
 import { Section } from "../ui/Section";
+import { WhatsAppIcon } from "../ui/WhatsAppIcon";
 import { sectionIds, siteConfig } from "../../lib/site";
 import type { ContactContent, FormField } from "../../types/content";
 
@@ -90,7 +91,8 @@ export function Contact({ content }: ContactProps) {
     >
       <div className="max-w-3xl">
         <Button href={whatsappHref} className="w-full px-6 py-4 text-base sm:w-auto">
-          {content.whatsappCtaLabel}
+          <WhatsAppIcon className="mr-2 size-5 shrink-0" />
+          <span>{content.whatsappCtaLabel}</span>
         </Button>
 
         <div className="my-8 flex items-center gap-4" aria-hidden="true">

@@ -26,7 +26,11 @@ export function MarketingPage({ content }: MarketingPageProps) {
         <Process content={content.process} />
         <Packages content={content.packages} />
         <Examples content={content.examples} />
-        <WhyUs content={content.whyUs} />
+        <WhyUs
+          content={content.whyUs}
+          whatsappCtaLabel={content.contact.whatsappCtaLabel}
+          whatsappMessage={content.contact.whatsappMessage}
+        />
         {/* <FAQ content={content.faq} /> */}
         <Contact content={content.contact} />
       </main>

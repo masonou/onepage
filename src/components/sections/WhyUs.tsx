@@ -1,14 +1,19 @@
 import Image from "next/image";
 
+import { Button } from "../ui/Button";
 import { Section } from "../ui/Section";
 import { sectionIds } from "../../lib/site";
 import type { WhyUsContent } from "../../types/content";
 
 type WhyUsProps = {
   content: WhyUsContent;
+  whatsappCtaLabel: string;
+  whatsappMessage: string;
 };
 
-export function WhyUs({ content }: WhyUsProps) {
+export function WhyUs({ content, whatsappCtaLabel, whatsappMessage }: WhyUsProps) {
+  const whatsappHref = `https://wa.me/35799194313?text=${encodeURIComponent(whatsappMessage)}`;
+
   return (
     <Section id={sectionIds.whyUs} title={content.title} tone="tint">
       <div className="grid items-center gap-8 lg:grid-cols-[minmax(17rem,0.7fr)_minmax(0,1.3fr)] lg:gap-16">
@@ -31,6 +36,11 @@ export function WhyUs({ content }: WhyUsProps) {
               {content.description}
             </p>
           )}
+          <div className="mt-6">
+            <Button href={whatsappHref} className="w-full px-6 py-4 text-base sm:w-auto">
+              {whatsappCtaLabel}
+            </Button>
+          </div>
           <div className="mt-5 flex items-center gap-2">
             <a
               href="https://www.linkedin.com/in/masonou"

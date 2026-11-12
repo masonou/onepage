@@ -19,7 +19,7 @@ export const enContent: SiteContent = {
     ],
     cta: { label: "Get in touch", href: `#${sectionIds.contact}` },
     localeSwitch: {
-      label: "Ελληνικά",
+      label: "Greek",
       href: "/",
       ariaLabel: "Switch language to Greek",
     },

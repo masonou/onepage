@@ -18,7 +18,7 @@ export const elContent: SiteContent = {
     ],
     cta: { label: "Επικοινώνησε", href: `#${sectionIds.contact}` },
     localeSwitch: {
-      label: "English",
+      label: "Αγγλικά",
       href: "/en",
       ariaLabel: "Αλλαγή γλώσσας σε Αγγλικά",
     },

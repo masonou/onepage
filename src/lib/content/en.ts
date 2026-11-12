@@ -4,7 +4,8 @@ import type { SiteContent } from "../../types/content";
 export const enContent: SiteContent = {
   locale: "en",
   metadata: {
-    title: "Professional Websites for Small Businesses in Cyprus | One Page Cyprus",
+    title:
+      "Professional Websites for Small Businesses in Cyprus | One Page Cyprus",
     description:
       "Straightforward, modern websites for small businesses and self-employed professionals in Cyprus. From €850.",
   },
@@ -24,12 +25,12 @@ export const enContent: SiteContent = {
     },
   },
   hero: {
-    title: "Professional websites for small businesses in Cyprus.",
-    description: "Modern websites | A clear process | Fair pricing",
+    title: "Web design that speaks to the Cypriot audience",
+    description: "Modern Websites | Clear Process | Fair Pricing",
     primaryCta: { label: "Get in touch", href: `#${sectionIds.contact}` },
     secondaryCta: { label: "See pricing", href: `#${sectionIds.packages}` },
     trustNote:
-      "For small businesses and self-employed professionals who need a strong online presence without the usual headache.",
+      "For small businesses and self-employed professionals who need a strong online presence.",
   },
   problem: {
     title: "Why are you quoted €5,000 for a simple website?",
@@ -42,7 +43,10 @@ export const enContent: SiteContent = {
       {
         text: "Large agencies build websites and apps for major businesses. Those projects cost tens of thousands and need big teams, so even getting their attention can be expensive.",
       },
-      { text: "3. You are asking for things that are more complex than you need", tone: "strong" },
+      {
+        text: "3. You are asking for things that are more complex than you need",
+        tone: "strong",
+      },
       {
         text: "They can sound and look impressive, but in practice they may not be necessary for your business.",
       },
@@ -63,7 +67,8 @@ export const enContent: SiteContent = {
       {
         name: "The essentials package",
         price: "€850",
-        bestFor: "Ideal for small and medium-sized businesses and self-employed professionals",
+        bestFor:
+          "Ideal for small and medium-sized businesses and self-employed professionals",
         description: "",
         includes: [
           "Advice on what to build",
@@ -98,7 +103,8 @@ export const enContent: SiteContent = {
   },
   process: {
     title: "The process",
-    description: "The whole process usually takes around 1–2 weeks. We will stay in touch throughout.",
+    description:
+      "The whole process usually takes around 1–2 weeks. We will stay in touch throughout.",
     steps: [
       {
         title: "I get to know what you need",
@@ -107,7 +113,8 @@ export const enContent: SiteContent = {
       },
       {
         title: "You send the essentials",
-        description: "Your logo, photos, processes and anything else you already have.",
+        description:
+          "Your logo, photos, processes and anything else you already have.",
       },
       {
         title: "I build your website",
@@ -126,7 +133,8 @@ export const enContent: SiteContent = {
     project: {
       featuredLabel: "EXAMPLE",
       name: "LVG Blinds",
-      description: "A website for a company providing indoor and outdoor shading solutions.",
+      description:
+        "A website for a company providing indoor and outdoor shading solutions.",
       highlights: [
         "A clear presentation of the services",
         "Products shown with photographs",
@@ -155,14 +163,33 @@ Tell me what you have in mind.`,
   contact: {
     title: "Tell me what you need",
     whatsappCtaLabel: "Message me on WhatsApp",
-    whatsappMessage: "Hello Kyriakos! I’m interested in a website for my business.",
+    whatsappMessage:
+      "Hello Kyriakos! I’m interested in a website for my business.",
     formDividerLabel: "or",
     selectPlaceholder: "Select an option",
     emailSubject: `${siteConfig.name} contact request`,
     formFields: [
-      { name: "name", label: "Name", type: "text", placeholder: "", required: true },
-      { name: "email", label: "Email", type: "email", placeholder: "", required: true },
-      { name: "phone", label: "Phone number", type: "tel", placeholder: "", required: true },
+      {
+        name: "name",
+        label: "Name",
+        type: "text",
+        placeholder: "",
+        required: true,
+      },
+      {
+        name: "email",
+        label: "Email",
+        type: "email",
+        placeholder: "",
+        required: true,
+      },
+      {
+        name: "phone",
+        label: "Phone number",
+        type: "tel",
+        placeholder: "",
+        required: true,
+      },
       {
         name: "preferredCommunication",
         label: "How would you prefer me to get in touch?",
@@ -173,7 +200,12 @@ Tell me what you have in mind.`,
           { label: "Email", value: "email" },
         ],
       },
-      { name: "businessName", label: "Business name", type: "text", placeholder: "" },
+      {
+        name: "businessName",
+        label: "Business name",
+        type: "text",
+        placeholder: "",
+      },
       {
         name: "existingWebsite",
         label: "Do you already have a website?",

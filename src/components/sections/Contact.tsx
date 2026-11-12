@@ -13,7 +13,7 @@ type ContactProps = {
   content: ContactContent;
 };
 
-function renderField(field: FormField) {
+function renderField(field: FormField, selectPlaceholder: string) {
   const fieldClasses =
     "mt-2 w-full rounded-2xl border border-border bg-white px-4 py-3 text-sm text-foreground outline-none focus:border-accent focus:ring-4 focus:ring-[rgba(21,90,201,0.12)]";
 
@@ -34,7 +34,7 @@ function renderField(field: FormField) {
     return (
       <select id={field.name} name={field.name} className={fieldClasses} defaultValue="">
         <option value="" disabled>
-          Select an option
+          {selectPlaceholder}
         </option>
         {field.options?.map((option) => (
           <option
@@ -75,7 +75,7 @@ export function Contact({ content }: ContactProps) {
       .join("\n");
 
     window.location.href = `mailto:${siteConfig.email}?${new URLSearchParams({
-      subject: `${siteConfig.name} contact request`,
+      subject: content.emailSubject,
       body: message,
     }).toString()}`;
   };
@@ -93,7 +93,7 @@ export function Contact({ content }: ContactProps) {
 
         <div className="my-8 flex items-center gap-4" aria-hidden="true">
           <span className="h-px flex-1 bg-border" />
-          <span className="text-sm text-muted">ή</span>
+          <span className="text-sm text-muted">{content.formDividerLabel}</span>
           <span className="h-px flex-1 bg-border" />
         </div>
 
@@ -110,7 +110,7 @@ export function Contact({ content }: ContactProps) {
                       </span>
                     )}
                   </span>
-                  {renderField(field)}
+                  {renderField(field, content.selectPlaceholder)}
                 </label>
               ))}
             </div>
@@ -125,7 +125,7 @@ export function Contact({ content }: ContactProps) {
                     </span>
                   )}
                 </span>
-                {renderField(field)}
+                {renderField(field, content.selectPlaceholder)}
               </label>
             ))}
 

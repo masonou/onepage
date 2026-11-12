@@ -1,17 +1,27 @@
-// TODO: Translate this file into Greek. This is currently using English placeholder content.
 import { sectionIds, siteConfig } from "../site";
 import type { SiteContent } from "../../types/content";
 
 export const elContent: SiteContent = {
   locale: "el",
+  metadata: {
+    title: "Ιστοσελίδες για Μικρές Επιχειρήσεις στην Κύπρο | One Page Cyprus",
+    description:
+      "Μοντέρνες, προσιτές και φιλικές για κινητά ιστοσελίδες για μικρές επιχειρήσεις και ελεύθερους επαγγελματίες στην Κύπρο. Από €850.",
+  },
   header: {
     brand: siteConfig.name,
+    homeHref: "/",
     navigation: [
       { label: "Διαδικασία", href: `#${sectionIds.process}` },
       { label: "Τιμή", href: `#${sectionIds.packages}` },
       { label: "Παράδειγμα", href: `#${sectionIds.examples}` },
     ],
     cta: { label: "Επικοινώνησε", href: `#${sectionIds.contact}` },
+    localeSwitch: {
+      label: "English",
+      href: "/en",
+      ariaLabel: "Αλλαγή γλώσσας σε Αγγλικά",
+    },
   },
   hero: {
     title: "Θέλεις Ιστοσελίδα αλλά ούλλοι κόφκουν κελλέ; Δαμέ είσαι!",
@@ -48,6 +58,7 @@ export const elContent: SiteContent = {
   packages: {
     title: "Ναι αλλά.. Πόσα;",
     description: "",
+    includesLabel: "Includes",
     packages: [
       {
         name: "Βασικό Πακέτο με ότι Χρειάζεσαι",
@@ -143,12 +154,17 @@ export const elContent: SiteContent = {
 
     image: "/images/masonou.jpeg",
     imageAlt: "Kyriakos Masonou",
+    linkedInLabel: "LinkedIn του Κυριάκου Masonou",
+    instagramLabel: "Instagram του Κυριάκου Masonou",
   },
   contact: {
     title: "Πε μου τι θέλεις",
     whatsappCtaLabel: "Στείλε μου στο WhatsApp",
     whatsappMessage:
       "Γεια σου Κυριάκο! Ενδιαφέρομαι να κάνω ιστοσελίδα για την επιχείρησή μου.",
+    formDividerLabel: "ή",
+    selectPlaceholder: "Select an option",
+    emailSubject: `${siteConfig.name} contact request`,
     formFields: [
       {
         name: "name",

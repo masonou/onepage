@@ -32,7 +32,7 @@ export function Packages({ content }: PackagesProps) {
 
             <div className="space-y-3">
               <p className="text-sm font-semibold uppercase tracking-[0.16em] text-accent">
-                Includes
+                {content.includesLabel}
               </p>
               <ul className="space-y-3">
                 {item.includes.map((feature) => (

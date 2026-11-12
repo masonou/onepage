@@ -19,25 +19,31 @@ type BuildPageMetadataOptions = {
   title: string;
   description: string;
   pathname: string;
+  openGraphLocale: string;
 };
 
 export function buildPageMetadata({
   title,
   description,
   pathname,
+  openGraphLocale,
 }: BuildPageMetadataOptions): Metadata {
   return {
     title,
     description,
     alternates: {
       canonical: pathname,
+      languages: {
+        el: "/",
+        en: "/en",
+      },
     },
     openGraph: {
       title,
       description,
       url: pathname,
       siteName: siteConfig.name,
-      locale: "el_CY",
+      locale: openGraphLocale,
       type: "website",
     },
   };

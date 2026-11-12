@@ -5,10 +5,21 @@ export type LinkItem = {
   href: string;
 };
 
+export type LocaleSwitchContent = LinkItem & {
+  ariaLabel: string;
+};
+
 export type HeaderContent = {
   brand: string;
+  homeHref: string;
   navigation: LinkItem[];
   cta: LinkItem;
+  localeSwitch: LocaleSwitchContent;
+};
+
+export type PageMetadataContent = {
+  title: string;
+  description: string;
 };
 
 export type HeroContent = {
@@ -42,6 +53,7 @@ export type PackageItem = {
 export type PackagesContent = {
   title: string;
   description: string;
+  includesLabel: string;
   packages: PackageItem[];
   note: string;
 };
@@ -81,6 +93,8 @@ export type WhyUsContent = {
   description: string;
   image: string;
   imageAlt: string;
+  linkedInLabel: string;
+  instagramLabel: string;
 };
 
 export type FormField = {
@@ -102,6 +116,9 @@ export type ContactContent = {
   title: string;
   whatsappCtaLabel: string;
   whatsappMessage: string;
+  formDividerLabel: string;
+  selectPlaceholder: string;
+  emailSubject: string;
   formFields: FormField[];
   ctaLabel?: string;
 };
@@ -115,6 +132,7 @@ export type FooterContent = {
 
 export type SiteContent = {
   locale: Locale;
+  metadata: PageMetadataContent;
   header: HeaderContent;
   hero: HeroContent;
   problem: ProblemContent;

@@ -16,4 +16,4 @@ npm run lint
 npm run build
 ```
 
-The site content, including the footer language-link data for the planned English version, lives in `src/lib/content/el.ts`. Its locale structure is defined in `src/types/content.ts`.
+The locale content lives in `src/lib/content/el.ts` and `src/lib/content/en.ts`, including the footer language-link data. Its shared structure is defined in `src/types/content.ts`.

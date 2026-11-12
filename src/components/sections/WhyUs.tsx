@@ -42,7 +42,7 @@ export function WhyUs({ content, whatsappCtaLabel, whatsappMessage }: WhyUsProps
               href="https://www.linkedin.com/in/masonou"
               target="_blank"
               rel="noreferrer"
-              aria-label="LinkedIn του Κυριάκου Masonou"
+              aria-label={content.linkedInLabel}
               className="inline-flex size-8 items-center justify-center rounded-full border border-border text-muted hover:border-accent hover:text-accent focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
             >
               <svg viewBox="0 0 24 24" aria-hidden="true" className="size-3.5 fill-current">
@@ -54,7 +54,7 @@ export function WhyUs({ content, whatsappCtaLabel, whatsappMessage }: WhyUsProps
               href="https://www.instagram.com/masonouky"
               target="_blank"
               rel="noreferrer"
-              aria-label="Instagram του Κυριάκου Masonou"
+              aria-label={content.instagramLabel}
               className="inline-flex size-8 items-center justify-center rounded-full border border-border text-muted hover:border-accent hover:text-accent focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
             >
               <svg viewBox="0 0 24 24" aria-hidden="true" className="size-3.5 fill-current">

@@ -123,11 +123,11 @@ export const enContent: SiteContent = {
   },
   whyUs: {
     title: "Why work with me",
-    description: `Hello, I’m Kyriakos. I have been building websites for the past seven years alongside my work in business, programme and project development.
+    description: `Hey, I’m Kyriakos and I’ve been building websites on the side for 7 years now, with my main career being in Business and Project Development.
 
-My aim is to create a professional online presence that suits your business and helps turn visitors into customers.
+My goal with a website is creating a professional digital image of your business that aligns with your brand and turns visitors into customers.
 
-Tell me what you have in mind.`,
+What do you have in mind?`,
     image: "/images/masonou.jpeg",
     imageAlt: "Kyriakos Masonou",
     linkedInLabel: "Kyriakos Masonou on LinkedIn",
@@ -190,7 +190,7 @@ Tell me what you have in mind.`,
       },
       {
         name: "needs",
-        label: "What do you need?",
+        label: "Any details?",
         type: "textarea",
         placeholder:
           "Briefly describe what your business does. If you already have a website or social-media pages for your business (Instagram or Facebook), send them here.",

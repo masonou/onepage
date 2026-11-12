@@ -214,7 +214,7 @@ export const elContent: SiteContent = {
       },
       {
         name: "needs",
-        label: "Τι χρειάζεσαι;",
+        label: "Λεπτομέρειες;",
         type: "textarea",
         placeholder:
           "Μια σύντομη περιγραφή του τι κάνει η επιχείρησή σου. Αν ήδη έχεις ιστοσελίδα ή μέσα κοινωνικής δικτύωσης για την επιχείρησή σου (Instagram ή Facebook) στείλε μου τα εδώ.",

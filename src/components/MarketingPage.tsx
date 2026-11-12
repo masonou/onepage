@@ -30,7 +30,7 @@ export function MarketingPage({ content }: MarketingPageProps) {
         />
         <Contact content={content.contact} />
       </main>
-      <Footer content={content.footer} />
+      {/* <Footer content={content.footer} /> */}
     </div>
   );
 }

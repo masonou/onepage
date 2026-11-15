@@ -16,9 +16,12 @@ export const elContent: SiteContent = {
       { label: "Τιμή", href: `#${sectionIds.packages}` },
       { label: "Παράδειγμα", href: `#${sectionIds.examples}` },
     ],
+    navigationLabel: "Κύρια πλοήγηση",
+    openMenuLabel: "Άνοιγμα μενού πλοήγησης",
+    closeMenuLabel: "Κλείσιμο μενού πλοήγησης",
     cta: { label: "Επικοινώνησε", href: `#${sectionIds.contact}` },
     localeSwitch: {
-      label: "Αγγλικά",
+      label: "English",
       href: "/en",
       ariaLabel: "Αλλαγή γλώσσας σε Αγγλικά",
     },

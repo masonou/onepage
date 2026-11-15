@@ -13,6 +13,9 @@ export type HeaderContent = {
   brand: string;
   homeHref: string;
   navigation: LinkItem[];
+  navigationLabel: string;
+  openMenuLabel: string;
+  closeMenuLabel: string;
   cta: LinkItem;
   localeSwitch: LocaleSwitchContent;
 };

@@ -7,6 +7,7 @@ type ButtonProps = {
   variant?: "primary" | "secondary";
   className?: string;
   type?: "button" | "submit" | "reset";
+  onClick?: () => void;
 };
 
 export function Button({
@@ -15,6 +16,7 @@ export function Button({
   variant = "primary",
   className = "",
   type = "button",
+  onClick,
 }: ButtonProps) {
   const classes = [
     "inline-flex items-center justify-center rounded-full px-5 py-3 text-sm font-semibold tracking-tight focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[rgba(21,90,201,0.14)]",
@@ -28,14 +30,14 @@ export function Button({
 
   if (href) {
     return (
-      <Link href={href} className={classes}>
+      <Link href={href} className={classes} onClick={onClick}>
         {children}
       </Link>
     );
   }
 
   return (
-    <button type={type} className={classes}>
+    <button type={type} className={classes} onClick={onClick}>
       {children}
     </button>
   );

@@ -16,9 +16,12 @@ export const enContent: SiteContent = {
       { label: "Pricing", href: `#${sectionIds.packages}` },
       { label: "Example", href: `#${sectionIds.examples}` },
     ],
+    navigationLabel: "Primary navigation",
+    openMenuLabel: "Open navigation menu",
+    closeMenuLabel: "Close navigation menu",
     cta: { label: "Get in touch", href: `#${sectionIds.contact}` },
     localeSwitch: {
-      label: "Greek",
+      label: "Ελληνικά",
       href: "/",
       ariaLabel: "Switch language to Greek",
     },

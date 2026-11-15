@@ -24,7 +24,7 @@ export const elContent: SiteContent = {
     },
   },
   hero: {
-    title: "Θέλεις Ιστοσελίδα αλλά ούλλοι κόφκουν κελλέ;",
+    title: "Θέλεις Ιστοσελίδα αλλά ούλλοι κόφκουν κελλέ; ",
     highlightedTitle: "Δαμέ είσαι!",
     highlightOnNewLine: true,
     description: "Μοντέρνες Ιστοσελίδες | Ξεκάθαρη Διαδικασία | Φιλική Τιμή",

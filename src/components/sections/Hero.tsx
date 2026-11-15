@@ -32,15 +32,15 @@ function UnderlinedPhrase({ children, className = "" }: UnderlinedPhraseProps) {
 
 export function Hero({ content }: HeroProps) {
   return (
-    <section className="overflow-hidden border-b border-border bg-white py-16 sm:py-20 lg:py-24">
+    <section className="overflow-hidden border-b border-border bg-white py-12 sm:py-16 lg:py-24">
       <Container>
-        <div className="mx-auto max-w-4xl space-y-6 lg:text-center">
-          <h1 className="max-w-3xl font-display text-4xl leading-tight tracking-tight text-foreground sm:text-5xl lg:mx-auto lg:max-w-4xl lg:text-6xl">
+        <div className="mx-auto max-w-4xl space-y-5 lg:space-y-6 lg:text-center">
+          <h1 className="max-w-3xl text-center font-display text-4xl leading-tight tracking-tight text-foreground sm:text-5xl lg:mx-auto lg:max-w-4xl lg:text-6xl">
             <span>{content.title}</span>
             {content.highlightOnNewLine ? (
-              <UnderlinedPhrase className="mt-2 block w-fit lg:mx-auto">
-                {content.highlightedTitle}
-              </UnderlinedPhrase>
+              <span className="mt-2 block">
+                <UnderlinedPhrase>{content.highlightedTitle}</UnderlinedPhrase>
+              </span>
             ) : (
               <>
                 {" "}
@@ -50,11 +50,12 @@ export function Hero({ content }: HeroProps) {
               </>
             )}
           </h1>
-          <p className="max-w-2xl text-lg leading-8 text-muted sm:text-xl lg:mx-auto">
-            {content.description}
+
+          <p className="mx-auto max-w-xl text-center text-sm leading-7 text-muted sm:text-base sm:leading-8">
+            {content.trustNote}
           </p>
 
-          <div className="flex flex-col gap-3 sm:flex-row lg:justify-center">
+          <div className="flex flex-wrap justify-center gap-3">
             <Button href={content.primaryCta.href}>
               {content.primaryCta.label}
             </Button>
@@ -62,10 +63,6 @@ export function Hero({ content }: HeroProps) {
               {content.secondaryCta.label}
             </Button>
           </div>
-
-          <p className="max-w-2xl text-sm leading-7 text-muted lg:mx-auto">
-            {content.trustNote}
-          </p>
         </div>
       </Container>
     </section>

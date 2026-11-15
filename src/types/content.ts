@@ -29,7 +29,6 @@ export type HeroContent = {
   title: string;
   highlightedTitle: string;
   highlightOnNewLine?: boolean;
-  description: string;
   primaryCta: LinkItem;
   secondaryCta: LinkItem;
   trustNote: string;

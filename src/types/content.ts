@@ -47,13 +47,13 @@ export type PackageItem = {
   price: string;
   bestFor: string;
   description: string;
+  includesLabel: string;
   includes: string[];
 };
 
 export type PackagesContent = {
   title: string;
   description: string;
-  includesLabel: string;
   packages: PackageItem[];
   note: string;
 };

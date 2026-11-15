@@ -58,7 +58,6 @@ export const elContent: SiteContent = {
   packages: {
     title: "Ναι αλλά.. Πόσα;",
     description: "",
-    includesLabel: "Includes",
     packages: [
       {
         name: "Βασικό Πακέτο με ότι Χρειάζεσαι",
@@ -66,6 +65,7 @@ export const elContent: SiteContent = {
         bestFor:
           "Ιδανικό για μικρομεσαίες επιχειρήσεις και ελεύθερους επαγγελματίες",
         description: "",
+        includesLabel: "ΠΕΡΙΕΧΕΙ",
         includes: [
           "Συμβουλή για το τι να κάμουμε",
           "Μαξ 2 σελίδες",
@@ -83,6 +83,7 @@ export const elContent: SiteContent = {
         price: "",
         bestFor: "",
         description: "",
+        includesLabel: "ΕΠΙΛΟΓΕΣ",
         includes: [
           "Επιπλέον σελίδες",
           "Φόρμα επικοινωνίας",

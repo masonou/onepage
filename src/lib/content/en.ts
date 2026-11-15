@@ -34,7 +34,6 @@ export const enContent: SiteContent = {
   packages: {
     title: "Yes, but... how much?",
     description: "",
-    includesLabel: "Includes",
     packages: [
       {
         name: "The essentials package",
@@ -42,6 +41,7 @@ export const enContent: SiteContent = {
         bestFor:
           "Ideal for small and medium-sized businesses and self-employed professionals",
         description: "",
+        includesLabel: "INCLUDES",
         includes: [
           "Advice on what to build",
           "Up to 2 pages",
@@ -59,6 +59,7 @@ export const enContent: SiteContent = {
         price: "",
         bestFor: "",
         description: "",
+        includesLabel: "OPTIONS",
         includes: [
           "Additional pages",
           "A contact form",

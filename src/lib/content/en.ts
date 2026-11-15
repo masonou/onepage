@@ -4,10 +4,9 @@ import type { SiteContent } from "../../types/content";
 export const enContent: SiteContent = {
   locale: "en",
   metadata: {
-    title:
-      "Professional Websites for Small Businesses in Cyprus | One Page Cyprus",
+    title: "Professional Websites for Businesses in Cyprus | One Page Cyprus",
     description:
-      "Straightforward, modern websites for small businesses and self-employed professionals in Cyprus. From €850.",
+      "Straightforward, modern websites for businesses and self-employed professionals/freelancers in Cyprus. From €850.",
   },
   header: {
     brand: siteConfig.name,
@@ -30,7 +29,7 @@ export const enContent: SiteContent = {
     primaryCta: { label: "Get in touch", href: `#${sectionIds.contact}` },
     secondaryCta: { label: "See pricing", href: `#${sectionIds.packages}` },
     trustNote:
-      "For small businesses and self-employed professionals who need a strong online presence.",
+      "For SMEs and freelancers who need a strong online presence in Cyprus.",
   },
   packages: {
     title: "Yes, but... how much?",
@@ -50,7 +49,7 @@ export const enContent: SiteContent = {
           "Works well on phones, tablets and computers",
           "One language (English)",
           "Clear information about your business",
-          "Essential ways for customers to get in touch",
+          "Simple ways for customers to get in touch",
           "Domain registration for the first year (basic cost around €20/year)",
           "Two rounds of revisions",
         ],
@@ -75,7 +74,7 @@ export const enContent: SiteContent = {
     note: "",
   },
   process: {
-    title: "The process",
+    title: "The Process",
     description:
       "The whole process usually takes around 1–2 weeks and we will stay in touch throughout.",
     steps: [
@@ -92,7 +91,7 @@ export const enContent: SiteContent = {
       {
         title: "I build your website",
         description:
-          "I create the website around your needs, then we make the changes you would like.",
+          "I create your website and we make any changes you would like.",
       },
       {
         title: "Payment and we go live",

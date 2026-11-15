@@ -1,4 +1,4 @@
-import { Footer } from "./layout/Footer";
+// import { Footer } from "./layout/Footer";
 import { Header } from "./layout/Header";
 import { Contact } from "./sections/Contact";
 import { Examples } from "./sections/Examples";

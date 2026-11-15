@@ -24,7 +24,8 @@ export const enContent: SiteContent = {
     },
   },
   hero: {
-    title: "Web design that speaks to the Cypriot audience",
+    title: "Web design that speaks to the",
+    highlightedTitle: "Cypriot audience",
     description: "Modern Websites | Clear Process | Fair Pricing",
     primaryCta: { label: "Get in touch", href: `#${sectionIds.contact}` },
     secondaryCta: { label: "See pricing", href: `#${sectionIds.packages}` },

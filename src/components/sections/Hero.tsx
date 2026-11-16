@@ -35,10 +35,10 @@ export function Hero({ content }: HeroProps) {
     <section className="overflow-hidden border-b border-border bg-white pt-16 pb-18 lg:py-24">
       <Container className="lg:max-w-none">
         <div className="mx-auto max-w-4xl space-y-5 lg:max-w-none lg:space-y-6 lg:text-center">
-          <h1 className="max-w-3xl text-center font-display text-4xl leading-tight tracking-tight text-foreground sm:text-5xl lg:mx-auto lg:max-w-none lg:text-6xl">
+          <h1 className="max-w-3xl text-center font-display text-[2.4rem] leading-[1.32] tracking-tight text-foreground sm:text-5xl lg:mx-auto lg:max-w-none lg:text-6xl lg:leading-tight">
             <span>{content.title}</span>
             {content.highlightOnNewLine ? (
-              <span className="mt-2 block">
+              <span className="mt-3 block">
                 <UnderlinedPhrase>{content.highlightedTitle}</UnderlinedPhrase>
               </span>
             ) : (

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
 import { siteConfig } from "../../lib/site";
@@ -15,6 +16,7 @@ export default function GreekLayout({ children }: Readonly<{ children: React.Rea
     <html lang="el" className="h-full antialiased">
       <body className="min-h-full bg-background text-foreground">
         {children}
+        <Analytics />
         <SpeedInsights />
       </body>
     </html>

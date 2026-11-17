@@ -140,7 +140,7 @@ What do you have in mind?`,
     title: "Tell me what you need",
     whatsappCtaLabel: "Message me on WhatsApp",
     whatsappMessage:
-      "Hello Kyriakos! I’m interested in a website for my business.",
+      "Hey Kyriakos! I’m interested in a website for my business.",
     formDividerLabel: "or",
     selectPlaceholder: "Select an option",
     emailSubject: `${siteConfig.name} contact request`,

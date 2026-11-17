@@ -3,8 +3,7 @@ import type { Metadata } from "next";
 export const siteConfig = {
   name: "One Page Cyprus",
   email: "hello@example.com",
-  // TODO: Update this with the final production domain before launch.
-  siteUrl: "https://onepagecyprus.com",
+  siteUrl: "https://onepage.com.cy",
 } as const;
 
 export const sectionIds = {

@@ -169,8 +169,8 @@ export const elContent: SiteContent = {
       "Γεια σου Κυριάκο! Ενδιαφέρομαι να κάνω ιστοσελίδα για την επιχείρησή μου.",
     formDividerLabel: "ή",
     selectPlaceholder: "Select an option",
-    requiredFieldMessage: "Συμπλήρωσε αυτό το πεδίο.",
-    emailInvalidMessage: "Παρακαλώ βάλε μια έγκυρη διεύθυνση email.",
+    requiredFieldMessage: "Aπαραίτητο",
+    emailInvalidMessage: "Σάννα και λείπει κάτι που το email.",
     formFields: [
       {
         name: "name",

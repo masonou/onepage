@@ -143,7 +143,6 @@ What do you have in mind?`,
       "Hey Kyriakos! I’m interested in a website for my business.",
     formDividerLabel: "or",
     selectPlaceholder: "Select an option",
-    emailSubject: `${siteConfig.name} contact request`,
     formFields: [
       {
         name: "name",

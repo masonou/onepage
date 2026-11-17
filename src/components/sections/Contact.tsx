@@ -1,12 +1,8 @@
-"use client";
-
-import type { FormEvent } from "react";
-
 import { Button } from "../ui/Button";
 import { Card } from "../ui/Card";
 import { Section } from "../ui/Section";
 import { WhatsAppButton } from "../ui/WhatsAppButton";
-import { sectionIds, siteConfig } from "../../lib/site";
+import { sectionIds } from "../../lib/site";
 import type { ContactContent, FormField } from "../../types/content";
 
 type ContactProps = {
@@ -62,24 +58,6 @@ function renderField(field: FormField, selectPlaceholder: string) {
 }
 
 export function Contact({ content }: ContactProps) {
-  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-
-    const formData = new FormData(event.currentTarget);
-    const message = content.formFields
-      .map((field) => {
-        const value = formData.get(field.name);
-        return value ? `${field.label}: ${value}` : null;
-      })
-      .filter(Boolean)
-      .join("\n");
-
-    window.location.href = `mailto:${siteConfig.email}?${new URLSearchParams({
-      subject: content.emailSubject,
-      body: message,
-    }).toString()}`;
-  };
-
   return (
     <Section
       id={sectionIds.contact}
@@ -98,7 +76,7 @@ export function Contact({ content }: ContactProps) {
         </div>
 
         <Card className="p-8 sm:p-10" tone="soft">
-          <form className="space-y-5" onSubmit={handleSubmit}>
+          <form action="https://formspree.io/f/mrpqqzkb" method="POST" className="space-y-5">
             <div className="grid gap-5 sm:grid-cols-2">
               {content.formFields.slice(0, 6).map((field) => (
                 <label key={field.name} htmlFor={field.name}>

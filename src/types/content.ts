@@ -122,7 +122,6 @@ export type ContactContent = {
   whatsappMessage: string;
   formDividerLabel: string;
   selectPlaceholder: string;
-  emailSubject: string;
   formFields: FormField[];
   ctaLabel?: string;
 };

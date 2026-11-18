@@ -4,9 +4,9 @@ import type { SiteContent } from "../../types/content";
 export const elContent: SiteContent = {
   locale: "el",
   metadata: {
-    title: "Ιστοσελίδες για Επιχειρήσεις στην Κύπρο | One Page Cyprus",
+    title: "Ιστοσελίδες για Κυπριακές Επιχειρήσεις | One Page Cyprus",
     description:
-      "Μοντέρνες, προσιτές και φιλικές για κινητά ιστοσελίδες για μικρές επιχειρήσεις και ελεύθερους επαγγελματίες στην Κύπρο. Από €850.",
+      "Μοντέρνες, προσιτές και φιλικές για κινητά ιστοσελίδες για επιχειρήσεις και ελεύθερους επαγγελματίες στην Κύπρο. Από €850.",
   },
   header: {
     brand: siteConfig.name,
@@ -83,7 +83,7 @@ export const elContent: SiteContent = {
         ],
       },
       {
-        name: "Θέλεις έξτρα",
+        name: "Θέλεις Έξτρα;",
         price: "",
         bestFor: "",
         description: "",

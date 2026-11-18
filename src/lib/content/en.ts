@@ -5,8 +5,7 @@ export const enContent: SiteContent = {
   locale: "en",
   metadata: {
     title: "Web design for Cypriot SMEs | One Page Cyprus",
-    description:
-      "Straightforward, modern websites for businesses and self-employed professionals/freelancers in Cyprus. From €850.",
+    description: "Modern websites for Cypriot businesses and freelancers",
   },
   header: {
     brand: siteConfig.name,

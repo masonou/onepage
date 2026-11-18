@@ -4,7 +4,7 @@ import type { SiteContent } from "../../types/content";
 export const elContent: SiteContent = {
   locale: "el",
   metadata: {
-    title: "Ιστοσελίδες για Μικρές Επιχειρήσεις στην Κύπρο | One Page Cyprus",
+    title: "Ιστοσελίδες για Επιχειρήσεις στην Κύπρο | One Page Cyprus",
     description:
       "Μοντέρνες, προσιτές και φιλικές για κινητά ιστοσελίδες για μικρές επιχειρήσεις και ελεύθερους επαγγελματίες στην Κύπρο. Από €850.",
   },
@@ -33,7 +33,7 @@ export const elContent: SiteContent = {
     primaryCta: { label: "Επικοινώνησε", href: `#${sectionIds.contact}` },
     secondaryCta: { label: "Πόσα", href: `#${sectionIds.packages}` },
     trustNote:
-      "Για μικρoμεσαίες επιχειρήσεις και ελεύθερους επαγγελματίες που χρειάζονται εμφάνιση στο διαδίκτυο χωρίς να πιερώσουν τα μανοτζέφαλα τους.",
+      "Για μικρoμεσαίες επιχειρήσεις που χρειάζονται εμφάνιση στο διαδίκτυο χωρίς να πιερώσουν τα μανοτζέφαλα τους.",
   },
   problem: {
     title: "Γιατί σου ζητούν €5,000 για μιαν απλή ιστοσελίδα;",

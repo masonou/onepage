@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title description">
+  <title id="title">One Page Cyprus — Web design for Cypriot SMEs</title>
+  <desc id="description">A social preview card for One Page Cyprus.</desc>
+  <rect width="1200" height="630" fill="#fffdf9"/>
+  <path d="M940 0h260v630H790c112-96 168-201 168-315S902 96 790 0h150Z" fill="#155ac9"/>
+  <path d="M1032 115c52 55 78 122 78 200s-26 145-78 200" fill="none" stroke="#fffdf9" stroke-opacity=".3" stroke-width="2"/>
+  <circle cx="1032" cy="315" r="66" fill="none" stroke="#fffdf9" stroke-opacity=".82" stroke-width="2"/>
+  <path d="M1003 315h58M1032 286v58" stroke="#fffdf9" stroke-width="2" stroke-linecap="round"/>
+  <g transform="translate(86 78)">
+    <text x="0" y="0" fill="#172033" font-family="Iowan Old Style, Palatino Linotype, Georgia, serif" font-size="42" font-weight="600" letter-spacing="-1.5">One Page</text>
+    <text x="2" y="33" fill="#5d6679" font-family="Avenir Next, Segoe UI, Arial, sans-serif" font-size="15" font-weight="600" letter-spacing="3.8">CYPRUS</text>
+    <rect x="0" y="76" width="66" height="7" rx="3.5" fill="#155ac9"/>
+    <text x="0" y="186" fill="#172033" font-family="Iowan Old Style, Palatino Linotype, Georgia, serif" font-size="62" font-weight="600" letter-spacing="-1.5">Web design for</text>
+    <text x="0" y="262" fill="#172033" font-family="Iowan Old Style, Palatino Linotype, Georgia, serif" font-size="62" font-weight="600" letter-spacing="-1.5">Cypriot SMEs</text>
+    <text x="0" y="416" fill="#5d6679" font-family="Avenir Next, Segoe UI, Arial, sans-serif" font-size="22" font-weight="500">onepage.com.cy</text>
+  </g>
+</svg>

@@ -19,6 +19,7 @@ type BuildPageMetadataOptions = {
   description: string;
   pathname: string;
   openGraphLocale: string;
+  socialImage: string;
 };
 
 export function buildPageMetadata({
@@ -26,6 +27,7 @@ export function buildPageMetadata({
   description,
   pathname,
   openGraphLocale,
+  socialImage,
 }: BuildPageMetadataOptions): Metadata {
   return {
     title,
@@ -44,6 +46,20 @@ export function buildPageMetadata({
       siteName: siteConfig.name,
       locale: openGraphLocale,
       type: "website",
+      images: [
+        {
+          url: socialImage,
+          width: 1200,
+          height: 630,
+          alt: title,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: [socialImage],
     },
   };
 }

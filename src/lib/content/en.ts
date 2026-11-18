@@ -4,7 +4,7 @@ import type { SiteContent } from "../../types/content";
 export const enContent: SiteContent = {
   locale: "en",
   metadata: {
-    title: "Professional Websites for Businesses in Cyprus | One Page Cyprus",
+    title: "Web design for Cypriot SMEs | One Page Cyprus",
     description:
       "Straightforward, modern websites for businesses and self-employed professionals/freelancers in Cyprus. From €850.",
   },

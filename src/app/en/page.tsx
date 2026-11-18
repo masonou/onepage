@@ -8,6 +8,7 @@ export const metadata: Metadata = buildPageMetadata({
   ...enContent.metadata,
   pathname: "/en",
   openGraphLocale: "en_CY",
+  socialImage: "/images/og-english.png",
 });
 
 export default function EnglishHomePage() {
